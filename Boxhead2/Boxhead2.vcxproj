@@ -134,9 +134,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="Interface.cpp" />
     <ClCompile Include="Control.cpp" />
     <ClCompile Include="main.cpp" />
@@ -146,6 +143,9 @@
     <ClInclude Include="Engine.h" />
     <ClInclude Include="Interface.h" />
     <ClInclude Include="Control.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
