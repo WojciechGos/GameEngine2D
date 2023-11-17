@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="52BBF824-AD30-57C2-B8D7-658C2DAFF979" name="Kary">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-05 13:54:07 UTC</createdTime>
+<generatorID>19810ED2-4ED0-653B-156F-49FC5D440B47</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Kary" id="EBD2009E-557D-BD59-58F9-CDBBFFBF7FEC">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-05 13:54:07 UTC</createdTime>
+<generatorID>9241852F-FB1A-118B-E2FD-9ECC5DE2E960</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F684155B-EDEA-7C92-4882-559655706E76</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cena_za_kradziez" id="28B9B709-C3A8-E095-18BA-625267B7D492">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-05 13:54:07 UTC</createdTime>
+<generatorID>7924AC61-810C-37B7-BB40-B8B620E39330</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cena_za_zepsucie" id="C1200B6C-2A3D-BE6F-0023-9414955D633D">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-05 13:54:07 UTC</createdTime>
+<generatorID>AB06BDFA-4BF3-C921-34CF-AB2E941105EF</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cena_za_zostawienie_bez_zabezpieczenia" id="693C583D-678B-9A2B-D133-F98C8FE980AB">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-05 13:54:07 UTC</createdTime>
+<generatorID>DA2AADF6-F559-FA82-449E-F378F3D0B00F</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A29F9AD5-938B-CFF9-7211-C3247A6FA126" name="Karyv1_PK">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-05 13:54:07 UTC</createdTime>
+<generatorID>17233292-999E-F347-A1E6-2E12FEFAFE53</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EBD2009E-557D-BD59-58F9-CDBBFFBF7FEC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

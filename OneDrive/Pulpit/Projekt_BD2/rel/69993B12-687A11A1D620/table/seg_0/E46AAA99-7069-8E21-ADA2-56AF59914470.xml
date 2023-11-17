@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E46AAA99-7069-8E21-ADA2-56AF59914470" name="Cennik">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>0916228D-588A-C0B7-10EC-6EEA4087459B</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Cennik" id="7EE64051-AFC8-32CF-A2BA-7F3A899B1DF4">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>A6A7F1F1-34D3-8084-AA89-275BB91617D1</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F684155B-EDEA-7C92-4882-559655706E76</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cena_za_godzine" id="21A07D10-EBFD-0F0F-0D32-D5BBC5579C09">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>DE6BA9EB-D4C5-2897-6430-768CF0FEF1C4</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B58F5734-C3AE-9441-DCD4-9200C1B0995C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cena_za_kilometr" id="51D374A7-CD2A-8A30-9117-B4E74B667CA1">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>F2B3734C-1AFC-A3D6-95BC-FDC23AA1A94F</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B58F5734-C3AE-9441-DCD4-9200C1B0995C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cena_za_minute_rezerwacji" id="B46D754F-C16E-7412-9D5B-7ECCAEA33880">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>CCDFDA80-E52F-19F8-C38B-6D967F5B342E</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B58F5734-C3AE-9441-DCD4-9200C1B0995C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="71111EEB-3F63-DBF9-43D3-3A799D69541B" name="Cennik_PK">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>41786A8C-025B-05E4-DAB5-BE867802F4A6</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7EE64051-AFC8-32CF-A2BA-7F3A899B1DF4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

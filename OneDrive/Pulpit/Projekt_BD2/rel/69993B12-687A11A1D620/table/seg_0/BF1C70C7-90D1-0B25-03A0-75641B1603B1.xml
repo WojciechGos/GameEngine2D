@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BF1C70C7-90D1-0B25-03A0-75641B1603B1" name="Adres">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>A86EFD1E-2763-FB98-66C7-5AB5A3854108</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Adres" id="093A44B9-2102-99CC-2107-8D39B66D7DBC">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>0E8AB701-E496-887D-8827-9CB29FD5EE89</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F684155B-EDEA-7C92-4882-559655706E76</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Miasto" id="76E6246B-07FB-3619-A8C3-57F8AB19FEB4">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>1952E923-E86A-3157-DD68-342B608B3262</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>52A3899F-AA41-1A67-3EC2-4DFB0220F8DD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ulica" id="009AE96B-6027-A072-61F0-61B20C15AC6C">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>19B3BB30-C9A8-084A-1211-4660006F5E94</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>9D85429A-F6B0-7224-A4C4-1F5B9254C5E5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Numer_domu" id="67FA839C-A447-E816-777E-2B2841993FA3">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>F4EDD069-67D7-9B6B-F1E8-1E42AD0871A3</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>4543A4A9-9262-691B-EDB2-AA5A538E332E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Kod_pocztowy" id="85471CBD-520E-6B85-0389-30148B8B798D">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>7DEEAD1F-08F9-6F7D-C7D0-2F61FD3DDE4C</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="112A92B0-FC0C-C998-9718-872909BD79CE" name="Adres_PK">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>FEBED988-1EBD-4E77-3EAA-CABC50F8FDF3</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="093A44B9-2102-99CC-2107-8D39B66D7DBC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

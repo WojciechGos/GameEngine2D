@@ -1,0 +1,166 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F19CCBFE-B58B-0BEC-BFDB-4D767D18C3CF" name="Klient">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>C0AD428B-AFB7-2CDA-D8BA-B5368D709A5A</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Klienta" id="22A4AEF3-AF23-8E2F-7289-B2C758F693C4">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>5AA3B5B1-CA77-A095-AF64-3536B78234D0</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F684155B-EDEA-7C92-4882-559655706E76</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Imie" id="74DBDF7D-87CB-EB70-5095-8CCA4CE27B14">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>A3A99F02-BBCD-4AD6-FD4F-3500CFEAA85B</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<domain>A99BD0EE-3617-4A6F-0698-C147DAA67E00</domain>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nazwisko" id="68DD1B28-D55F-B01E-C3E1-614815A27A07">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>050B4C9E-22B7-B322-AF92-994EEF3BC6BC</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Wiek" id="BCE16578-AF15-166A-871A-9BEDAC955007">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>0CB14E52-B833-138B-1A86-113A63163E54</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Adres_ID_Adres" id="B0EE1464-DA22-2F90-7B29-85C8CE608A41">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>08DE15C5-0D64-6330-EEEF-0FB1CE3951A0</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F684155B-EDEA-7C92-4882-559655706E76</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DE0795DB-9074-C6BB-59BE-739999FC7765" referredColumn="093A44B9-2102-99CC-2107-8D39B66D7DBC"/>
+</associations>
+</Column>
+<Column name="Dane_kontaktowe_ID_Dane_kontaktowe" id="14E7A734-C901-14D4-20E6-37F47DDD322F">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>442258E3-80D8-3C06-8ECF-E0F7A7291FA6</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<domain>F684155B-EDEA-7C92-4882-559655706E76</domain>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F4A103D6-6FCC-31F7-B46A-FDDDFC666B06" referredColumn="CD9175A5-0ACA-0576-60AB-EC6240844324"/>
+</associations>
+</Column>
+<Column name="Pakiet_ID_Pakiet" id="4E0E9FAD-81E0-8DC6-8FD7-4B673AAD0B2B">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-05 13:54:07 UTC</createdTime>
+<generatorID>529EECC3-6C93-EB7E-B56A-24CDFDA57C96</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F684155B-EDEA-7C92-4882-559655706E76</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0C542463-EC32-6B0B-CD46-AFA1C88723EA" referredColumn="35DA766E-08A5-748E-CFC9-44905A2496BE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0AAF2A0A-69F2-8574-6D40-B394B2218F20" name="Klient_PK">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>1AE386DF-C60C-CF82-2FB7-F9DF72905F12</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="22A4AEF3-AF23-8E2F-7289-B2C758F693C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C57902C7-F510-3230-7F3B-D37048458521" name="Klient__IDX">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>0E9CD055-55CB-F7C4-C2C9-11F330FC57EE</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="14E7A734-C901-14D4-20E6-37F47DDD322F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2BDAABF7-EAC8-45AA-10DB-FA317E6D3F1E" name="Klient_Adres_FK">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>7A570911-548E-717D-70C4-AA5957B559EC</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B0EE1464-DA22-2F90-7B29-85C8CE608A41"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1E76DAB9-159E-1985-A4E1-C5AEF05F2AC2" name="Klient_Dane_kontaktowe_FK">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>0E9CD055-55CB-F7C4-C2C9-11F330FC57EE</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="14E7A734-C901-14D4-20E6-37F47DDD322F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A8DDCABE-3806-F48D-9C6D-DDC89DCAA247" name="Klient_Pakiet_FK">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-05 13:54:07 UTC</createdTime>
+<generatorID>1D72CA57-DC43-EB13-D44D-F1AEFB79E39C</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E0E9FAD-81E0-8DC6-8FD7-4B673AAD0B2B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

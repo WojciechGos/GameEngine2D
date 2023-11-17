@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="45B9CFF4-9F68-3FB3-8070-798DE3E7888D" name="Pracownik">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-05 13:54:07 UTC</createdTime>
+<generatorID>18B1D77B-6908-3ACF-1F1E-4C53AAF13444</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Pracownik" id="929C75CF-7DEF-F423-3D46-BB2F3D594ADC">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-05 13:54:07 UTC</createdTime>
+<generatorID>3C072C00-E1C1-CC3B-0817-3A8A6DEC0144</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F684155B-EDEA-7C92-4882-559655706E76</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dane_pracownika_ID_Dane_pracownika" id="454F7CDB-7841-9FE5-FEC5-D40F5BA200AF">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-05 13:54:07 UTC</createdTime>
+<generatorID>21222BA9-7CDB-45C7-4141-EF42B793EA4A</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F684155B-EDEA-7C92-4882-559655706E76</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="47975757-6EC2-907A-B801-1ADEEFD246E5" referredColumn="075AB146-CDBA-C452-F0A5-05B75F753194"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EDD0355F-EB64-4535-B504-CF3E94E1DC52" name="Pracownik_PK">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-05 13:54:07 UTC</createdTime>
+<generatorID>9B0C291F-8227-E49B-6D99-5C5F20C425AA</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="929C75CF-7DEF-F423-3D46-BB2F3D594ADC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7412E219-4884-E6CE-3817-773BA134A4F3" name="Pracownik__IDX">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-05 13:54:07 UTC</createdTime>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>4D53C41A-E801-E3BA-CD24-C945B90C6679</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="454F7CDB-7841-9FE5-FEC5-D40F5BA200AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="426C4B1E-9C24-155B-A861-E742ABB03F45" name="Pracownik_Dane_pracownika_FK">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-05 13:54:07 UTC</createdTime>
+<generatorID>4D53C41A-E801-E3BA-CD24-C945B90C6679</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="454F7CDB-7841-9FE5-FEC5-D40F5BA200AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

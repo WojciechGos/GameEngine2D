@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="17D208DD-80A2-00CE-6544-322C2C207E7C" name="Furgonetka">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-05 13:54:07 UTC</createdTime>
+<generatorID>B6F6318F-CB88-678F-5366-2D83D0CE9AC4</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Furgonetka" id="1F56C951-D85A-CBFF-9802-BD5BEE94DB34">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-05 13:54:07 UTC</createdTime>
+<generatorID>71359F8E-F8DE-A267-0EE2-5DC0B8BD945C</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F684155B-EDEA-7C92-4882-559655706E76</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Marka" id="8CC65239-840B-7BF8-ED8E-B950886C520E">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-05 13:54:07 UTC</createdTime>
+<generatorID>6364477E-AB01-6641-0BF7-060359AE654F</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A99BD0EE-3617-4A6F-0698-C147DAA67E00</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Model" id="3C1D3EC4-A04C-3390-23C4-8D51E74CCB4B">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-05 13:54:07 UTC</createdTime>
+<generatorID>2F850DB0-C45F-1121-0D30-706399253E66</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A99BD0EE-3617-4A6F-0698-C147DAA67E00</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nr_rejestracyjny" id="F61EC3FC-6B0E-3DA1-E8E9-EE6A9F153CEF">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-05 13:54:07 UTC</createdTime>
+<generatorID>0470C305-0FEF-9FD7-4E9F-A6AA7B583474</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A99BD0EE-3617-4A6F-0698-C147DAA67E00</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F42D2D26-846D-2F20-F9E4-08DBDACFB636" name="Furgonetka_PK">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-05 13:54:07 UTC</createdTime>
+<generatorID>06F1DA09-E172-F7C4-B36F-2DFD0690C121</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F56C951-D85A-CBFF-9802-BD5BEE94DB34"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

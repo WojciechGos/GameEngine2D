@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F7D0C988-6A22-1307-4626-495F55262C98" containerWithKeyObject="96F8D091-4869-C8D7-7401-0F99BC04EA90" localFKIndex="92540D23-2293-5F11-5501-51E67C362550" name="Serwis_roweru_Furgonetka_FK">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-05 13:54:07 UTC</createdTime>
+<generatorID>26788212-73B2-D3FC-2879-726C965E10FE</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<referredTableLongName>Furgonetka</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>17D208DD-80A2-00CE-6544-322C2C207E7C</referredTableID>
+<keyObject>F42D2D26-846D-2F20-F9E4-08DBDACFB636</keyObject>
+<referredKeyID>F42D2D26-846D-2F20-F9E4-08DBDACFB636</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Furgonetka</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

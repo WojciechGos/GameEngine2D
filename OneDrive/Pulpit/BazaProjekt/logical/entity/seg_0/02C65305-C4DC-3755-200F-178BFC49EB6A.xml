@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="02C65305-C4DC-3755-200F-178BFC49EB6A" name="Typ">
+<createdBy>48662</createdBy>
+<createdTime>2023-05-23 09:17:24 UTC</createdTime>
+<ownerDesignName>BazaProjekt</ownerDesignName>
+<engineerTo>
+<item key="DC5A771C-54D1-531C-9551-37A570F5F18B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Nazwa" id="81A879EF-ED5E-AF7D-2E14-D180ACD6D1C6">
+<createdBy>48662</createdBy>
+<createdTime>2023-05-23 09:24:04 UTC</createdTime>
+<ownerDesignName>BazaProjekt</ownerDesignName>
+<engineerTo>
+<item key="DC5A771C-54D1-531C-9551-37A570F5F18B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A99BD0EE-3617-4A6F-0698-C147DAA67E00</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="253E289E-BAD3-FB3D-581E-227743AF40F2" name="Typ PK">
+<createdBy>48662</createdBy>
+<createdTime>2023-05-23 09:24:13 UTC</createdTime>
+<ownerDesignName>BazaProjekt</ownerDesignName>
+<engineerTo>
+<item key="DC5A771C-54D1-531C-9551-37A570F5F18B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>81A879EF-ED5E-AF7D-2E14-D180ACD6D1C6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

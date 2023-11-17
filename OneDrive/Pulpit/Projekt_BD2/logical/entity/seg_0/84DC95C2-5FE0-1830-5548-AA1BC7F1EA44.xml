@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="84DC95C2-5FE0-1830-5548-AA1BC7F1EA44" name="Rower">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 12:43:45 UTC</createdTime>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<engineerTo>
+<item key="69993B12-38EA-2F62-DC0F-687A11A1D620" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Roweru" id="EB981BB6-A900-647B-153E-D1EBE4139156">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 16:23:42 UTC</createdTime>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<engineerTo>
+<item key="69993B12-38EA-2F62-DC0F-687A11A1D620" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F684155B-EDEA-7C92-4882-559655706E76</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Marka" id="4A895B18-1D97-9837-68AD-20936A140A15">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:24:20 UTC</createdTime>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<engineerTo>
+<item key="69993B12-38EA-2F62-DC0F-687A11A1D620" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A99BD0EE-3617-4A6F-0698-C147DAA67E00</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Model" id="7FEF9EF1-EBCE-82A3-82FC-74F32996F0AE">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:24:35 UTC</createdTime>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<engineerTo>
+<item key="69993B12-38EA-2F62-DC0F-687A11A1D620" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A99BD0EE-3617-4A6F-0698-C147DAA67E00</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Kolor" id="FF439DFB-B4FE-DE73-F42D-1A6A8C5D2532">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:24:49 UTC</createdTime>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<engineerTo>
+<item key="69993B12-38EA-2F62-DC0F-687A11A1D620" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A99BD0EE-3617-4A6F-0698-C147DAA67E00</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Rodzaj" id="8A0769DD-1C52-5B59-6D3C-734338438D9F">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-05 14:03:15 UTC</createdTime>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<engineerTo>
+<item key="69993B12-38EA-2F62-DC0F-687A11A1D620" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A99BD0EE-3617-4A6F-0698-C147DAA67E00</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Serwisu_roweru" id="22B85B1C-5C60-3493-E2DC-DA77F41F9540">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:05:16 UTC</createdTime>
+<generatorID>8D8895A7-DCDE-7437-82E4-971E1AB14FE2</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<engineerTo>
+<item key="69993B12-38EA-2F62-DC0F-687A11A1D620" value="true"/>
+</engineerTo>
+<referedAttribute>05B4643D-0032-3229-21F5-A4AD1F099F77</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F684155B-EDEA-7C92-4882-559655706E76</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Wymiary" id="A3B777CB-BCE0-C6D0-FC33-63810A0B78E2">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-02 22:24:40 UTC</createdTime>
+<generatorID>7E416776-5C48-18C3-8859-1629F4AA3CDC</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<engineerTo>
+<item key="69993B12-38EA-2F62-DC0F-687A11A1D620" value="true"/>
+</engineerTo>
+<referedAttribute>23AF57E5-457B-86A5-1E5B-D23712F4CD01</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F684155B-EDEA-7C92-4882-559655706E76</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Oplata" id="FFDFD32F-DC1F-963C-3327-9BFA5E64213D">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-02 22:43:53 UTC</createdTime>
+<generatorID>A96A625B-8F38-4B79-F55A-EC0B5127065B</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<engineerTo>
+<item key="69993B12-38EA-2F62-DC0F-687A11A1D620" value="true"/>
+</engineerTo>
+<referedAttribute>B0A89599-9120-6274-9B54-5426422D64CE</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F684155B-EDEA-7C92-4882-559655706E76</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="20A1E5A7-25DF-C962-057A-4D5C36CC3753" name="Rower PK">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 16:23:51 UTC</createdTime>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="69993B12-38EA-2F62-DC0F-687A11A1D620" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EB981BB6-A900-647B-153E-D1EBE4139156</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

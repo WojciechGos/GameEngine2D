@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Miasto-Wypozyczenia" directorySegmentName="seg_0" id="E074F7A7-D644-2CDF-762E-D88A98CA5804">
+<createdBy>48662</createdBy>
+<createdTime>2023-05-23 09:39:26 UTC</createdTime>
+<ownerDesignName>BazaProjekt</ownerDesignName>
+<engineerTo>
+<item key="DC5A771C-54D1-531C-9551-37A570F5F18B" value="true"/>
+</engineerTo>
+<sourcePk>9ABB82B3-2E54-D8B0-A21B-1CFBD3210070</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B4376AE0-2C45-4DCB-845D-0EE5ADC66584</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D6C3C1C4-3C77-1C8B-ADE7-54A1271025CA</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

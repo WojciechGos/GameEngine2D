@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B3ADC28D-671A-1CC5-18F0-6BCB9B778180" name="TypPlatnosci">
+<createdBy>48662</createdBy>
+<createdTime>2023-05-23 09:21:08 UTC</createdTime>
+<ownerDesignName>BazaProjekt</ownerDesignName>
+<engineerTo>
+<item key="DC5A771C-54D1-531C-9551-37A570F5F18B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_typplatnosci" id="D9FED83B-827F-D82D-A433-297B196BAF91">
+<createdBy>48662</createdBy>
+<createdTime>2023-05-23 09:33:12 UTC</createdTime>
+<ownerDesignName>BazaProjekt</ownerDesignName>
+<engineerTo>
+<item key="DC5A771C-54D1-531C-9551-37A570F5F18B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nazwa" id="A578ADBB-9E12-5AD9-5BBF-372949BD66F7">
+<createdBy>48662</createdBy>
+<createdTime>2023-05-23 09:33:47 UTC</createdTime>
+<ownerDesignName>BazaProjekt</ownerDesignName>
+<engineerTo>
+<item key="DC5A771C-54D1-531C-9551-37A570F5F18B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A99BD0EE-3617-4A6F-0698-C147DAA67E00</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="20CF4E71-9C12-C6F4-0E5D-3BFF216CEE80" name="Ulica">
+<createdBy>48662</createdBy>
+<createdTime>2023-05-23 09:20:19 UTC</createdTime>
+<ownerDesignName>BazaProjekt</ownerDesignName>
+<engineerTo>
+<item key="DC5A771C-54D1-531C-9551-37A570F5F18B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Nazwa" id="AEF04898-7B22-B12D-902B-96C9D75E7088">
+<createdBy>48662</createdBy>
+<createdTime>2023-05-23 09:30:41 UTC</createdTime>
+<ownerDesignName>BazaProjekt</ownerDesignName>
+<engineerTo>
+<item key="DC5A771C-54D1-531C-9551-37A570F5F18B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A99BD0EE-3617-4A6F-0698-C147DAA67E00</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A1C84FA1-1A8F-56B5-1575-ADD2C0FADC8F" name="Ulica PK">
+<createdBy>48662</createdBy>
+<createdTime>2023-05-23 09:30:55 UTC</createdTime>
+<ownerDesignName>BazaProjekt</ownerDesignName>
+<engineerTo>
+<item key="DC5A771C-54D1-531C-9551-37A570F5F18B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AEF04898-7B22-B12D-902B-96C9D75E7088</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

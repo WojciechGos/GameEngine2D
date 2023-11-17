@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Ulica-Wypozyczenia" directorySegmentName="seg_0" id="4D86DEF8-CB9C-001D-A8BF-68E0C1347CF7">
+<createdBy>48662</createdBy>
+<createdTime>2023-05-23 09:39:36 UTC</createdTime>
+<ownerDesignName>BazaProjekt</ownerDesignName>
+<engineerTo>
+<item key="DC5A771C-54D1-531C-9551-37A570F5F18B" value="true"/>
+</engineerTo>
+<sourcePk>A1C84FA1-1A8F-56B5-1575-ADD2C0FADC8F</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>20CF4E71-9C12-C6F4-0E5D-3BFF216CEE80</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D6C3C1C4-3C77-1C8B-ADE7-54A1271025CA</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

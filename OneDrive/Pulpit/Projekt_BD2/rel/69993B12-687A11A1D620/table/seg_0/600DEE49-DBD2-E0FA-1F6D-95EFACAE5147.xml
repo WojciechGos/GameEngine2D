@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="600DEE49-DBD2-E0FA-1F6D-95EFACAE5147" name="Oplata">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-05 13:54:07 UTC</createdTime>
+<generatorID>8B6AEFCA-4E7C-9EA5-89DE-2FD83B8A6D95</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<ordsAlias>oplatyv1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Oplata" id="4CFEDABD-FD80-6B47-DCAB-B6200432908B">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-05 13:54:07 UTC</createdTime>
+<generatorID>B0A89599-9120-6274-9B54-5426422D64CE</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F684155B-EDEA-7C92-4882-559655706E76</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Uwagi" id="567728D4-566A-A275-5BF7-2ECB7EB6D991">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-05 13:54:07 UTC</createdTime>
+<generatorID>EE0A2ED3-CFBA-34D5-5BE9-015098CCDAF0</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cennik_ID_Cennik" id="3D45F896-DE5D-D1B9-4B7D-74F284D1D01D">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-05 13:54:07 UTC</createdTime>
+<generatorID>4B6AD1DF-CF86-682F-35F9-74CFE40D767F</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F684155B-EDEA-7C92-4882-559655706E76</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="57E33FBF-1FAF-DB89-D8C5-5E047538398A" referredColumn="7EE64051-AFC8-32CF-A2BA-7F3A899B1DF4"/>
+</associations>
+</Column>
+<Column name="Karyv1_ID_Kary" id="03D9578E-9E79-64EA-3D31-DFAD0580CD1E">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-05 13:54:07 UTC</createdTime>
+<generatorID>221D9974-48CF-39F4-6117-4A0E699EE236</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F684155B-EDEA-7C92-4882-559655706E76</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="81538C68-A06E-4B2A-C478-2D700A989243" referredColumn="EBD2009E-557D-BD59-58F9-CDBBFFBF7FEC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="661AA3C9-2A58-17E1-0C64-7DA4D8189711" name="Oplaty_PK">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-05 13:54:07 UTC</createdTime>
+<generatorID>95BF5B92-B145-0D6B-DD69-5CE8AEE3E10E</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4CFEDABD-FD80-6B47-DCAB-B6200432908B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0D68F042-C98C-5D33-F6C0-EFFFE7E64001" name="Oplaty_Cennik_FK">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-05 13:54:07 UTC</createdTime>
+<generatorID>659EA9EB-8F14-DD28-6593-8C9C86B71EA7</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D45F896-DE5D-D1B9-4B7D-74F284D1D01D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1C7869F3-0140-80B6-6972-0B188238CB73" name="Oplaty_Karyv1_FK">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-05 13:54:07 UTC</createdTime>
+<generatorID>3444B58C-1D00-D68A-1BC2-080C52B5F139</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="03D9578E-9E79-64EA-3D31-DFAD0580CD1E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

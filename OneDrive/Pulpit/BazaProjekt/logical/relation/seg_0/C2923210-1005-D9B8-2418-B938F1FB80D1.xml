@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Recenzja-Wypozyczenia" directorySegmentName="seg_0" id="C2923210-1005-D9B8-2418-B938F1FB80D1">
+<createdBy>48662</createdBy>
+<createdTime>2023-05-23 09:39:06 UTC</createdTime>
+<ownerDesignName>BazaProjekt</ownerDesignName>
+<engineerTo>
+<item key="DC5A771C-54D1-531C-9551-37A570F5F18B" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A910F658-B7C4-5472-DC94-FB0D314912D0</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D6C3C1C4-3C77-1C8B-ADE7-54A1271025CA</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

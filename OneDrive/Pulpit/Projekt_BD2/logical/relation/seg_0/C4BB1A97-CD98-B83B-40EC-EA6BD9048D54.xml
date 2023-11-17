@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Miejsce_oddania-Wypozyczenie" directorySegmentName="seg_0" id="C4BB1A97-CD98-B83B-40EC-EA6BD9048D54">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:08:59 UTC</createdTime>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<engineerTo>
+<item key="69993B12-38EA-2F62-DC0F-687A11A1D620" value="true"/>
+</engineerTo>
+<sourcePk>EB763BBC-DD51-171F-CA23-015DE18B1FBA</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>CD95A96E-0D43-359F-8D2A-A64E28671D03</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E2B21DEF-A6E7-3830-4A07-F0E1E1C7ADE0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

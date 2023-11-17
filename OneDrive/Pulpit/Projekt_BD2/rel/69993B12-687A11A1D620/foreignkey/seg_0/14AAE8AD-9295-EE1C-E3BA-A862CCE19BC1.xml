@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="14AAE8AD-9295-EE1C-E3BA-A862CCE19BC1" containerWithKeyObject="B2B30A51-2C66-428E-BA33-94DC1A975CC0" localFKIndex="04E724EE-BB7E-F704-118E-C38BDEC1189E" name="Rower_Oplaty_FK">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-05 13:54:07 UTC</createdTime>
+<generatorID>A96A625B-8F38-4B79-F55A-EC0B5127065B</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<referredTableLongName>Oplata</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>600DEE49-DBD2-E0FA-1F6D-95EFACAE5147</referredTableID>
+<keyObject>661AA3C9-2A58-17E1-0C64-7DA4D8189711</keyObject>
+<referredKeyID>661AA3C9-2A58-17E1-0C64-7DA4D8189711</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Oplata</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

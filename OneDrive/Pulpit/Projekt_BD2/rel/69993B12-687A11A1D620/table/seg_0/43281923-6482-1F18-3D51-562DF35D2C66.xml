@@ -1,0 +1,169 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="43281923-6482-1F18-3D51-562DF35D2C66" name="Wypozyczenie">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>E2B21DEF-A6E7-3830-4A07-F0E1E1C7ADE0</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Wypozyczenie" id="7145DA35-CCC8-D962-787F-5249AC70A8F9">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>F8825125-6C4E-6DA1-525C-D3A09635D9FF</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F684155B-EDEA-7C92-4882-559655706E76</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rower_ID_Roweru" id="D557C105-F3CA-5C7D-2E32-0AA3D489385C">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>D937EED2-9A6A-1D53-1FE9-B624A83859F0</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F684155B-EDEA-7C92-4882-559655706E76</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="984D46E2-0B96-EB8F-E5B3-848AF651956D" referredColumn="8A204A9C-89E7-EDE6-4F76-7554D997A245"/>
+</associations>
+</Column>
+<Column name="Klient_ID_Klienta" id="CD2BAFD3-856F-422A-76FD-EE8F2CC85F03">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>875D0D5B-2CB1-6FFF-2A17-C9FA4986347C</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F684155B-EDEA-7C92-4882-559655706E76</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4A768CD1-546E-2605-8BB0-255F08D85E83" referredColumn="22A4AEF3-AF23-8E2F-7289-B2C758F693C4"/>
+</associations>
+</Column>
+<Column name="Miejsce_wypozyczenia_ID_Miejsce_wypozyczenia" id="BC7D905A-CD9F-9EF5-F4DF-58E1C1E88224">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>B0189EA0-DE91-FF60-F554-9E3252C57A8A</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<domain>F684155B-EDEA-7C92-4882-559655706E76</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D37CF127-F81B-08D0-D25C-CC78A481899B" referredColumn="58344E44-5889-A46F-596A-FB7F0D0FEE69"/>
+</associations>
+</Column>
+<Column name="Miejsce_oddania_ID_Miejsce_oddania" id="E1ECD50C-4415-3B4B-0ADF-210F39D5B752">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>1FFC26BE-847A-3A9A-E9C8-3FD7E8FD2148</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F684155B-EDEA-7C92-4882-559655706E76</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CC3B2B1A-5E44-8A8E-6A80-F6EBD3928BB1" referredColumn="65DA9DAF-ED1C-17E0-9149-99CFBCD0F176"/>
+</associations>
+</Column>
+<Column name="Czas_wypozyczenia_ID_Czas_wypozyczenia" id="B3B094C8-35BE-6C04-BC1F-2408255D328C">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>3D71D270-EC76-79E0-1E0D-CE99EBBFFE20</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<domain>F684155B-EDEA-7C92-4882-559655706E76</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="00DBD2A2-82D2-0873-FB84-FBC32B5A31C6" referredColumn="5CD2D495-9DA4-8126-D4BE-852B61154B25"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EDABD95E-7F3B-CEFE-2B39-8D5CF1E7F193" name="Wypozyczenie_PK">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>A4170C71-866B-B304-B9B2-EEE16F82267D</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7145DA35-CCC8-D962-787F-5249AC70A8F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0751EA89-C99B-B54B-F867-59C1CFDFA0C5" name="Wypozyczenie_Czas_wypozyczenia_FK">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>F92E8950-6E07-C281-16C8-A5D7DE2CC2AA</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B3B094C8-35BE-6C04-BC1F-2408255D328C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="049BE9FA-2504-949C-37B2-E0A29346CF6B" name="Wypozyczenie_Klient_FK">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>EEA3B566-FD80-F880-FC09-6F1E125B07B5</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD2BAFD3-856F-422A-76FD-EE8F2CC85F03"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2DF1A506-9C79-78D5-AA51-27F688B5AAC7" name="Wypozyczenie_Miejsce_oddania_FK">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>C4BB1A97-CD98-B83B-40EC-EA6BD9048D54</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E1ECD50C-4415-3B4B-0ADF-210F39D5B752"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="53607A8F-0F2B-ECBF-1FD5-7EE9B01CD2F2" name="Wypozyczenie_Miejsce_wypozyczenia_FK">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>B8CB0442-58BB-2203-4991-A24AA9A5CB39</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BC7D905A-CD9F-9EF5-F4DF-58E1C1E88224"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="837757EC-BF08-BDBE-2E7F-F1ECA28A7904" name="Wypozyczenie_Rower_FK">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>CB9BE62C-DA95-9368-49A4-630A54160787</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D557C105-F3CA-5C7D-2E32-0AA3D489385C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Serwisy-Rower" directorySegmentName="seg_0" id="8D8895A7-DCDE-7437-82E4-971E1AB14FE2">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:05:16 UTC</createdTime>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<engineerTo>
+<item key="69993B12-38EA-2F62-DC0F-687A11A1D620" value="true"/>
+</engineerTo>
+<sourcePk>604A0FFA-29AF-4F93-8B36-480506E2AEDF</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>BF237CF0-54BB-F189-4EBD-C8DC4BD59FCA</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>84DC95C2-5FE0-1830-5548-AA1BC7F1EA44</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

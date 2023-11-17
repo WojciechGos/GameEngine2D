@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Wymiary_roweru-Rower" directorySegmentName="seg_0" id="7E416776-5C48-18C3-8859-1629F4AA3CDC">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-02 22:24:40 UTC</createdTime>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<engineerTo>
+<item key="69993B12-38EA-2F62-DC0F-687A11A1D620" value="true"/>
+</engineerTo>
+<sourcePk>09281837-84F3-AFE0-CDEC-A41AD2244B16</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B8663B29-EEF3-3092-A89F-4C930396748C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>84DC95C2-5FE0-1830-5548-AA1BC7F1EA44</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

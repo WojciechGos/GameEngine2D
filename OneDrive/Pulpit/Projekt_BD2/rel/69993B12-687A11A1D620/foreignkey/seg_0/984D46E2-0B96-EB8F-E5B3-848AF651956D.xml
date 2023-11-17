@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="984D46E2-0B96-EB8F-E5B3-848AF651956D" containerWithKeyObject="43281923-6482-1F18-3D51-562DF35D2C66" localFKIndex="837757EC-BF08-BDBE-2E7F-F1ECA28A7904" name="Wypozyczenie_Rower_FK">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>CB9BE62C-DA95-9368-49A4-630A54160787</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<referredTableLongName>Rower</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B2B30A51-2C66-428E-BA33-94DC1A975CC0</referredTableID>
+<keyObject>B0FA0F7C-F948-F08C-368D-142067BD14CC</keyObject>
+<referredKeyID>B0FA0F7C-F948-F08C-368D-142067BD14CC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Roweru</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

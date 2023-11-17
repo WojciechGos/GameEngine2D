@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Pakiet-Klient" directorySegmentName="seg_0" id="1D72CA57-DC43-EB13-D44D-F1AEFB79E39C">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-05 13:44:07 UTC</createdTime>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<engineerTo>
+<item key="69993B12-38EA-2F62-DC0F-687A11A1D620" value="true"/>
+</engineerTo>
+<sourcePk>68D961EE-AC6F-512F-8206-F355878BBD31</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E211E1C6-82BC-F137-01D1-626DF553E160</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C0AD428B-AFB7-2CDA-D8BA-B5368D709A5A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4228F17F-C2EE-91FF-60A1-7D19A60D5028" containerWithKeyObject="B2B30A51-2C66-428E-BA33-94DC1A975CC0" localFKIndex="B0844CB9-538E-84EC-A58C-5C5AE27E8439" name="Rower_Wymiary_roweru_FK">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-05 13:54:07 UTC</createdTime>
+<generatorID>7E416776-5C48-18C3-8859-1629F4AA3CDC</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<referredTableLongName>Wymiary_roweru</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D75BBE63-D604-4FE7-9448-BFF97CD4D18A</referredTableID>
+<keyObject>B543595F-232B-1DEB-02A3-A9C6C4ECA965</keyObject>
+<referredKeyID>B543595F-232B-1DEB-02A3-A9C6C4ECA965</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Wymiary</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

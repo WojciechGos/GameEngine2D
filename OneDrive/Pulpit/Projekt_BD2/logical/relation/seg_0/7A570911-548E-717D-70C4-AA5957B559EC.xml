@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Adres-Klient" directorySegmentName="seg_0" id="7A570911-548E-717D-70C4-AA5957B559EC">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:01:38 UTC</createdTime>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<engineerTo>
+<item key="69993B12-38EA-2F62-DC0F-687A11A1D620" value="true"/>
+</engineerTo>
+<sourcePk>FEBED988-1EBD-4E77-3EAA-CABC50F8FDF3</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A86EFD1E-2763-FB98-66C7-5AB5A3854108</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C0AD428B-AFB7-2CDA-D8BA-B5368D709A5A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

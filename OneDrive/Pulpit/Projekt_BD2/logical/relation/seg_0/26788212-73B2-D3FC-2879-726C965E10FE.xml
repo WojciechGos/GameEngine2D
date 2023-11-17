@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Furgonetka-Serwisy" directorySegmentName="seg_0" id="26788212-73B2-D3FC-2879-726C965E10FE">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-02 22:30:18 UTC</createdTime>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<engineerTo>
+<item key="69993B12-38EA-2F62-DC0F-687A11A1D620" value="true"/>
+</engineerTo>
+<sourcePk>06F1DA09-E172-F7C4-B36F-2DFD0690C121</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B6F6318F-CB88-678F-5366-2D83D0CE9AC4</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>BF237CF0-54BB-F189-4EBD-C8DC4BD59FCA</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

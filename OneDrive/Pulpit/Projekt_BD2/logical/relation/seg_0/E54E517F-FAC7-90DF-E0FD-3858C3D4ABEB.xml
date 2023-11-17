@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Naprawy-Serwisy" directorySegmentName="seg_0" id="E54E517F-FAC7-90DF-E0FD-3858C3D4ABEB">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-02 22:31:56 UTC</createdTime>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<engineerTo>
+<item key="69993B12-38EA-2F62-DC0F-687A11A1D620" value="true"/>
+</engineerTo>
+<sourcePk>36BFCADD-F707-FFA8-824B-6508DDDC3034</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6EDF1999-4706-E789-A676-6F0DE55767A3</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>BF237CF0-54BB-F189-4EBD-C8DC4BD59FCA</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

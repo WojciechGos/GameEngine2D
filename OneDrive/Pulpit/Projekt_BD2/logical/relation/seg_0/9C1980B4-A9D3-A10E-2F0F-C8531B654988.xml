@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Pracownik-Serwisy" directorySegmentName="seg_0" id="9C1980B4-A9D3-A10E-2F0F-C8531B654988">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-02 22:30:32 UTC</createdTime>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<engineerTo>
+<item key="69993B12-38EA-2F62-DC0F-687A11A1D620" value="true"/>
+</engineerTo>
+<sourcePk>9B0C291F-8227-E49B-6D99-5C5F20C425AA</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>18B1D77B-6908-3ACF-1F1E-4C53AAF13444</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>BF237CF0-54BB-F189-4EBD-C8DC4BD59FCA</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="00DBD2A2-82D2-0873-FB84-FBC32B5A31C6" containerWithKeyObject="43281923-6482-1F18-3D51-562DF35D2C66" localFKIndex="0751EA89-C99B-B54B-F867-59C1CFDFA0C5" name="Wypozyczenie_Czas_wypozyczenia_FK">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 17:18:15 UTC</createdTime>
+<generatorID>F92E8950-6E07-C281-16C8-A5D7DE2CC2AA</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<referredTableLongName>Czas_wypozyczenia</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C3BEA9DA-21B2-C04C-3F69-5EC7952AB327</referredTableID>
+<keyObject>46F5F4D6-E2A1-1C28-C794-E7C43248EF5E</keyObject>
+<referredKeyID>46F5F4D6-E2A1-1C28-C794-E7C43248EF5E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Czas_wypozyczenia</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

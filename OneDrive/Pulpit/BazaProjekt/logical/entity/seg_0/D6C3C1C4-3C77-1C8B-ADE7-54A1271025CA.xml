@@ -1,0 +1,220 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D6C3C1C4-3C77-1C8B-ADE7-54A1271025CA" name="Wypozyczenia">
+<createdBy>48662</createdBy>
+<createdTime>2023-05-23 09:16:27 UTC</createdTime>
+<ownerDesignName>BazaProjekt</ownerDesignName>
+<engineerTo>
+<item key="DC5A771C-54D1-531C-9551-37A570F5F18B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_wypozyczenia" id="0159E9D7-EC8B-E145-631A-5FFF9803A13A">
+<createdBy>48662</createdBy>
+<createdTime>2023-05-23 09:42:39 UTC</createdTime>
+<ownerDesignName>BazaProjekt</ownerDesignName>
+<engineerTo>
+<item key="DC5A771C-54D1-531C-9551-37A570F5F18B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_lokalizacja" id="56F45CC0-910C-D71D-8571-325E34BF7755">
+<createdBy>48662</createdBy>
+<createdTime>2023-05-23 09:36:26 UTC</createdTime>
+<generatorID>7E31AE88-563A-B3E6-310C-14BDAD19757F</generatorID>
+<ownerDesignName>BazaProjekt</ownerDesignName>
+<engineerTo>
+<item key="DC5A771C-54D1-531C-9551-37A570F5F18B" value="true"/>
+</engineerTo>
+<referedAttribute>6F1C67C2-EE39-5562-EEB1-6D11C4406AF4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_rowery" id="92D86D30-201F-C70F-9654-18DF8709A26E">
+<createdBy>48662</createdBy>
+<createdTime>2023-05-23 09:37:04 UTC</createdTime>
+<generatorID>551D594A-D5AE-DF74-D611-DAB555609550</generatorID>
+<ownerDesignName>BazaProjekt</ownerDesignName>
+<engineerTo>
+<item key="DC5A771C-54D1-531C-9551-37A570F5F18B" value="true"/>
+</engineerTo>
+<referedAttribute>44865911-19DE-C557-AC98-62891C3E3BBE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Rozmiar" id="0506DA84-510F-57D9-BC62-2115F1F7F935">
+<createdBy>48662</createdBy>
+<createdTime>2023-05-23 09:37:26 UTC</createdTime>
+<generatorID>3C505E00-A6FF-1E1A-CAF4-C7C256B98AA3</generatorID>
+<ownerDesignName>BazaProjekt</ownerDesignName>
+<engineerTo>
+<item key="DC5A771C-54D1-531C-9551-37A570F5F18B" value="true"/>
+</engineerTo>
+<referedAttribute>6566D9BC-E317-1B87-5F14-E50041FFF670</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nazwa" id="C9D4682A-E51F-2FD9-860B-E2FADFD248C5">
+<createdBy>48662</createdBy>
+<createdTime>2023-05-23 09:37:50 UTC</createdTime>
+<generatorID>0EC28E98-34C7-CA46-F3C9-5B586E0D2774</generatorID>
+<ownerDesignName>BazaProjekt</ownerDesignName>
+<engineerTo>
+<item key="DC5A771C-54D1-531C-9551-37A570F5F18B" value="true"/>
+</engineerTo>
+<referedAttribute>CE1E7800-656E-3889-1B56-E4628C65DFA7</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A99BD0EE-3617-4A6F-0698-C147DAA67E00</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nazwa1" id="6ABF05C7-D393-E0F8-C0D1-7A6C09DE8E16">
+<createdBy>48662</createdBy>
+<createdTime>2023-05-23 09:38:01 UTC</createdTime>
+<generatorID>39612C67-369A-529D-7E82-7F870237C128</generatorID>
+<ownerDesignName>BazaProjekt</ownerDesignName>
+<engineerTo>
+<item key="DC5A771C-54D1-531C-9551-37A570F5F18B" value="true"/>
+</engineerTo>
+<referedAttribute>81A879EF-ED5E-AF7D-2E14-D180ACD6D1C6</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A99BD0EE-3617-4A6F-0698-C147DAA67E00</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nazwa2" id="D68CE888-06E6-ED4E-76B2-1851C138901A">
+<createdBy>48662</createdBy>
+<createdTime>2023-05-23 09:38:13 UTC</createdTime>
+<generatorID>E9BC4140-FC77-57D6-54F4-20D45895A1D7</generatorID>
+<ownerDesignName>BazaProjekt</ownerDesignName>
+<engineerTo>
+<item key="DC5A771C-54D1-531C-9551-37A570F5F18B" value="true"/>
+</engineerTo>
+<referedAttribute>B092FC39-A0B3-7139-E974-4042B4869884</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A99BD0EE-3617-4A6F-0698-C147DAA67E00</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nazwa3" id="1CF597BD-E716-537A-7346-39381301B8FF">
+<createdBy>48662</createdBy>
+<createdTime>2023-05-23 09:39:16 UTC</createdTime>
+<generatorID>F7229D78-F405-C487-6B4D-020B3C7328AF</generatorID>
+<ownerDesignName>BazaProjekt</ownerDesignName>
+<engineerTo>
+<item key="DC5A771C-54D1-531C-9551-37A570F5F18B" value="true"/>
+</engineerTo>
+<referedAttribute>F23BC164-5BA5-E362-8B97-5F0BCD61A402</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A99BD0EE-3617-4A6F-0698-C147DAA67E00</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nazwa4" id="586DBC42-CC82-E916-3864-65151D4E7AD0">
+<createdBy>48662</createdBy>
+<createdTime>2023-05-23 09:39:26 UTC</createdTime>
+<generatorID>E074F7A7-D644-2CDF-762E-D88A98CA5804</generatorID>
+<ownerDesignName>BazaProjekt</ownerDesignName>
+<engineerTo>
+<item key="DC5A771C-54D1-531C-9551-37A570F5F18B" value="true"/>
+</engineerTo>
+<referedAttribute>FF9830E0-45D9-94EC-D1A5-7C5D5EA788CA</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A99BD0EE-3617-4A6F-0698-C147DAA67E00</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nazwa5" id="4FFBD089-AFC1-8410-5D20-D07BA2726A3B">
+<createdBy>48662</createdBy>
+<createdTime>2023-05-23 09:39:36 UTC</createdTime>
+<generatorID>4D86DEF8-CB9C-001D-A8BF-68E0C1347CF7</generatorID>
+<ownerDesignName>BazaProjekt</ownerDesignName>
+<engineerTo>
+<item key="DC5A771C-54D1-531C-9551-37A570F5F18B" value="true"/>
+</engineerTo>
+<referedAttribute>AEF04898-7B22-B12D-902B-96C9D75E7088</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A99BD0EE-3617-4A6F-0698-C147DAA67E00</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_rola" id="792BAEA6-DA75-8EC5-8E4C-F3F3A3996A7D">
+<createdBy>48662</createdBy>
+<createdTime>2023-05-23 09:39:55 UTC</createdTime>
+<generatorID>CBAEF936-5C2D-A1F0-02C7-5F4E52C620F2</generatorID>
+<ownerDesignName>BazaProjekt</ownerDesignName>
+<engineerTo>
+<item key="DC5A771C-54D1-531C-9551-37A570F5F18B" value="true"/>
+</engineerTo>
+<referedAttribute>D0D1215B-15CF-6743-FAD8-87A784E7D832</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_pracownicy" id="944AD7FE-2A6A-1ECA-3FFF-48AB6B17992F">
+<createdBy>48662</createdBy>
+<createdTime>2023-05-23 09:40:04 UTC</createdTime>
+<generatorID>174F1762-3FD9-91AD-CA6C-4A50E0F3F8EA</generatorID>
+<ownerDesignName>BazaProjekt</ownerDesignName>
+<engineerTo>
+<item key="DC5A771C-54D1-531C-9551-37A570F5F18B" value="true"/>
+</engineerTo>
+<referedAttribute>747F4ED1-20F0-EE62-8353-C797D0E8ED13</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_uzytkownicy" id="9B10CE1E-BFF4-1DD1-4607-9AB935857741">
+<createdBy>48662</createdBy>
+<createdTime>2023-05-23 09:40:37 UTC</createdTime>
+<generatorID>BB880AD4-4659-8F3F-D388-C38C5DAC2304</generatorID>
+<ownerDesignName>BazaProjekt</ownerDesignName>
+<engineerTo>
+<item key="DC5A771C-54D1-531C-9551-37A570F5F18B" value="true"/>
+</engineerTo>
+<referedAttribute>4D9C6DD4-8712-815E-2AA4-E2669DE12F9C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="272CB901-2F06-A45C-718B-08B2E93F7AE0" name="Wypozyczenia PK">
+<createdBy>48662</createdBy>
+<createdTime>2023-05-23 09:43:05 UTC</createdTime>
+<ownerDesignName>BazaProjekt</ownerDesignName>
+<engineerTo>
+<item key="DC5A771C-54D1-531C-9551-37A570F5F18B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0159E9D7-EC8B-E145-631A-5FFF9803A13A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

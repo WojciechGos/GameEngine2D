@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BF237CF0-54BB-F189-4EBD-C8DC4BD59FCA" name="Serwis_roweru">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 16:18:50 UTC</createdTime>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<engineerTo>
+<item key="69993B12-38EA-2F62-DC0F-687A11A1D620" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Serwisu_roweru" id="05B4643D-0032-3229-21F5-A4AD1F099F77">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 16:19:52 UTC</createdTime>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<engineerTo>
+<item key="69993B12-38EA-2F62-DC0F-687A11A1D620" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F684155B-EDEA-7C92-4882-559655706E76</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Uwagi" id="9DE086C3-8769-C232-B12D-FBEF46AEDEEB">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 16:20:36 UTC</createdTime>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<engineerTo>
+<item key="69993B12-38EA-2F62-DC0F-687A11A1D620" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Furgonetka" id="C43749DE-5CD4-91DD-6218-5C4097DB5713">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-02 22:30:18 UTC</createdTime>
+<generatorID>26788212-73B2-D3FC-2879-726C965E10FE</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<engineerTo>
+<item key="69993B12-38EA-2F62-DC0F-687A11A1D620" value="true"/>
+</engineerTo>
+<referedAttribute>71359F8E-F8DE-A267-0EE2-5DC0B8BD945C</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F684155B-EDEA-7C92-4882-559655706E76</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Pracownik" id="9D23BB6E-DCFB-C56F-F3C4-7E12FE5A76B9">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-02 22:30:32 UTC</createdTime>
+<generatorID>9C1980B4-A9D3-A10E-2F0F-C8531B654988</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<engineerTo>
+<item key="69993B12-38EA-2F62-DC0F-687A11A1D620" value="true"/>
+</engineerTo>
+<referedAttribute>3C072C00-E1C1-CC3B-0817-3A8A6DEC0144</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F684155B-EDEA-7C92-4882-559655706E76</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Naprawa" id="2EDDC074-40C0-4530-6814-1531307518D1">
+<createdBy>48662</createdBy>
+<createdTime>2023-03-02 22:31:56 UTC</createdTime>
+<generatorID>E54E517F-FAC7-90DF-E0FD-3858C3D4ABEB</generatorID>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<engineerTo>
+<item key="69993B12-38EA-2F62-DC0F-687A11A1D620" value="true"/>
+</engineerTo>
+<referedAttribute>3259006B-0E1F-7147-A36B-327BDC9E99CA</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F684155B-EDEA-7C92-4882-559655706E76</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="604A0FFA-29AF-4F93-8B36-480506E2AEDF" name="Serwisy_roweru PK">
+<createdBy>48662</createdBy>
+<createdTime>2023-02-28 16:20:04 UTC</createdTime>
+<ownerDesignName>Projekt_BD2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="69993B12-38EA-2F62-DC0F-687A11A1D620" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>05B4643D-0032-3229-21F5-A4AD1F099F77</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
