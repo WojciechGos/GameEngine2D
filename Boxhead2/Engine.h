@@ -11,13 +11,12 @@ public:
     void run();
 
 private:
-
-
+   
     void handle_keyboard(ALLEGRO_EVENT event, Movement* movement);
 
     void handle_mouse();
+   
 
-    // You can add private members or methods if needed
 };
 
 #endif

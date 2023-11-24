@@ -4,7 +4,7 @@
 #include <allegro5/allegro_ttf.h>
 #include <allegro5/allegro_native_dialog.h>
 #include <allegro5/allegro_image.h>
-
+#include <iostream>
 
 #include "Engine.h"
 #include "Control.h"
@@ -12,7 +12,6 @@
 #include "Player.h"
 #include "Enemy.h"
 
-#include <iostream>
 
 #define screenWidth 1800
 #define screenHeight 900
@@ -39,6 +38,7 @@ void Engine::init() {
 	*/
 	al_init();
 	al_install_keyboard();
+	al_install_mouse();
 	al_init_image_addon();
 	al_init_font_addon();
 	al_init_ttf_addon();
@@ -74,12 +74,16 @@ void Engine::run() {
 	/*
 		REGISTER EVENTS
 	*/
+	al_register_event_source(event_queue, al_get_mouse_event_source());
+	al_register_event_source(event_queue, al_get_mouse_event_source());
 	al_register_event_source(event_queue, al_get_display_event_source(display));
 	al_register_event_source(event_queue, al_get_keyboard_event_source());
 	al_register_event_source(event_queue, al_get_timer_event_source(timer));
 	al_register_event_source(event_queue, al_get_timer_event_source(enemy_timer));
 	al_start_timer(timer);
 	al_start_timer(enemy_timer);
+	al_init_font_addon();  
+	al_init_ttf_addon();
 
 	// Player create
 	Player player(INITIAL_PLAYER_POSITION_X, INITIAL_PLAYER_POSITION_Y);
@@ -91,19 +95,48 @@ void Engine::run() {
 	Enemy* enemies = Enemy::spawnEnemies(INITIAL_ENEMY_NUMBER);
 
 
+
+	Interface interface;
+	
+
 	/*
 		 MAIN LOOP
 	*/
 	bool running = true;
 	al_flip_display();
 
+	while (1) {
+
+		interface.menu();
+		al_flip_display();
+
+		ALLEGRO_EVENT ev;
+		al_wait_for_event(event_queue, &ev);
+
+		
+		if (ev.type == ALLEGRO_EVENT_MOUSE_BUTTON_DOWN) {
+			
+			if (ev.mouse.x >= 600 && ev.mouse.x <= 1050
+				&& ev.mouse.y >= 200 && ev.mouse.y <= 600) {
+				break;  
+			}
+			
+		}
+		
+		if (ev.type == ALLEGRO_EVENT_DISPLAY_CLOSE) {
+			break; 
+		}
+	}
+
+	//al_rest(2.0);
+
 	while (running) {
 		ALLEGRO_EVENT event;
 		al_wait_for_event(event_queue, &event);
-
-		drawMap();
+		
+		interface.drawMap();
 		player.drawLifeBar();
-
+		player.pointsCounter();
 
 		/*
 			EVENT HANDLERS
@@ -155,13 +188,11 @@ void Engine::handle_keyboard(ALLEGRO_EVENT event, Movement* movement) {
 			movement->setY(movement->getY() - MOVE);
 		if (al_key_down(&keyState, ALLEGRO_KEY_S))
 			movement->setY(movement->getY() + MOVE);
+
 	}
 }
 
 void Engine::handle_mouse() {
-
-
-	// iasiudiasubdfboszafuhgs
 }
 
 

@@ -17,6 +17,7 @@ public:
     void render();
     void shot();
     void drawLifeBar();
+    void pointsCounter();
 };
 
 
