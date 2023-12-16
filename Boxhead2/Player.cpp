@@ -62,6 +62,10 @@ void Player::shot(Gameplay* gameplay) {
 
 	for(int i=0; i<gameplay->getEnemyNumber(); ++i){
 		
+		if (!gameplay->enemies[i].getIsAlive()) {
+			continue;
+		}
+		std::cout << "enemy index: " << i << std::endl;
 		enemy_x = gameplay->enemies[i].getPosition()->getX();
 		enemy_y = gameplay->enemies[i].getPosition()->getY();
 		//std::cout << "enemy_x: " << enemy_x << " enemy_y: " << enemy_y << std::endl;
@@ -81,7 +85,9 @@ void Player::shot(Gameplay* gameplay) {
 
 				// check if enemy is in field fire in X axis
 				if (field_of_fire_x1 <= enemy_x && enemy_x <= field_of_fire_x2) {
+					std::cout << "TRAFIONY enemy index: " << i << std::endl;
 					isSomeoneShoted = true;
+					index = i;
 				}
 			}
 		}
@@ -90,8 +96,9 @@ void Player::shot(Gameplay* gameplay) {
 			if (enemy_y > position.getY()) {
 				// check if enemy is in field fire in X axis
 				if (field_of_fire_x1 <= enemy_x && enemy_x <= field_of_fire_x2) {
-
+					std::cout << "TRAFIONY enemy index: " << i << std::endl;
 					isSomeoneShoted = true;
+					index = i;
 				}
 
 			}
@@ -102,7 +109,9 @@ void Player::shot(Gameplay* gameplay) {
 			if (enemy_x < position.getX()) {
 				// check if enemy is in field fire in Y axis
 				if (enemy_y >= field_of_fire_y1 && enemy_y <= field_of_fire_y2) {
+					std::cout << "TRAFIONY enemy index: " << i << std::endl;
 					isSomeoneShoted = true;
+					index = i;
 				}
 			}
 		}
@@ -111,14 +120,17 @@ void Player::shot(Gameplay* gameplay) {
 			if (enemy_x > position.getX()) {
 				// check if enemy is in field fire in Y axis
 				if (enemy_y >= field_of_fire_y1 && enemy_y <= field_of_fire_y2) {
-
+					std::cout << "TRAFIONY enemy index: " << i << std::endl;
 					isSomeoneShoted = true;
+					index = i;
 				}
 			}
 		}
 	}
-	if(isSomeoneShoted)
+	if (isSomeoneShoted) {
+		isSomeoneShoted = false;
 		gameplay->killEnemy(index);
+	}
 }
 
 void Player::drawLifeBar()

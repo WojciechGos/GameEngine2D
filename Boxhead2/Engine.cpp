@@ -85,10 +85,6 @@ void Engine::run() {
 	al_start_timer(enemy_timer);
 
 
-
-	
-
-
 	/*
 		 MAIN LOOP
 	*/

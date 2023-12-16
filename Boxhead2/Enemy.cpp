@@ -40,6 +40,10 @@ Movement* Enemy::getPosition() {
 	return &position;
 }
 
+bool Enemy::getIsAlive() {
+	return this->isAlive;
+}
+
 void Enemy::updatePosition(Movement* player_position) {
 
 	if (!isAlive)
@@ -71,9 +75,9 @@ void Enemy::updatePosition(Movement* player_position) {
 	else
 		move_y = -1 * std::ceil(dy * ENEMY_SPEED);
 
-	std::cout << "move_x: " << move_x << " move_y: " << move_y << std::endl;
-	std::cout << "x: " << position.getX() << " y: " << position.getY() << std::endl;
-	std::cout << "player_x: " << player_position->getX() << " player_y: " << player_position->getY() << std::endl;
+	//std::cout << "move_x: " << move_x << " move_y: " << move_y << std::endl;
+	//std::cout << "x: " << position.getX() << " y: " << position.getY() << std::endl;
+	//std::cout << "player_x: " << player_position->getX() << " player_y: " << player_position->getY() << std::endl;
 	
 	position.setX(position.getX() + move_x);
 	position.setY(position.getY() + move_y);

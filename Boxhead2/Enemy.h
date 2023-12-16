@@ -18,6 +18,7 @@ public:
     int getState();
     int getDirection();
     void setIsAlive(bool state);
+    bool getIsAlive();
 private:
     ALLEGRO_BITMAP* bitmap;
     bool isAlive = true;
