@@ -11,7 +11,7 @@
 
 class Player {
 private:
-    int hp = 50;
+    int lifePoints = 6;
     void renderShot();
     ALLEGRO_BITMAP* player;
 
@@ -24,7 +24,7 @@ public:
     void shot(Gameplay* gameplay);
     void drawLifeBar();
     void pointsCounter(ALLEGRO_FONT* font);
-
+    bool giveDmg();
 };
 
 

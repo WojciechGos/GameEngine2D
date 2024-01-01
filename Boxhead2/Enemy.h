@@ -1,16 +1,18 @@
 #ifndef Enemy_h
 #define Enemy_h
 
+
+
 #include "Control.h"
-//#include "Player.h";
-//class Player;
+
+
 
 class Enemy {
 public:
 
     Enemy();
     Enemy(int x, int y);
-    void updatePosition(Movement* playerPosition);
+    bool updatePosition(Movement* playerPosition);
     void render(ALLEGRO_EVENT *event);
     void setState(int state);
     void setDirection(int direction);

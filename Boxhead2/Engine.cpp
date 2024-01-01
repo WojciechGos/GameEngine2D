@@ -138,7 +138,12 @@ void Engine::run() {
 		}
 
 		for (auto& enemy : gameplay.enemies) {
-			enemy.updatePosition(&player.position);
+			bool isInRange = enemy.updatePosition(&player.position);
+
+			if (isInRange)
+				if (player.giveDmg())
+					running = false;
+
 			enemy.render(&event);
 		}
 
@@ -147,6 +152,22 @@ void Engine::run() {
 		al_flip_display();
 
 	}
+
+	while (1) {
+
+		Interface::goodbye();
+		al_flip_display();
+
+		ALLEGRO_EVENT ev;
+		al_wait_for_event(event_queue, &ev);
+
+
+
+		if (ev.type == ALLEGRO_EVENT_DISPLAY_CLOSE) {
+			break;
+	}
+}
+
 
 	al_destroy_display(display);
 	al_destroy_timer(timer);
@@ -164,7 +185,6 @@ void Engine::handle_keyboard(ALLEGRO_EVENT* event, Player* player, Gameplay* gam
 	ALLEGRO_KEYBOARD_STATE keyState;
 	if (event->type == ALLEGRO_EVENT_KEY_DOWN) {
 		if (event->keyboard.keycode == ALLEGRO_KEY_SPACE) {
-			std::cout << "FIRE" << std::endl;
 			player->shot(gameplay);
 		}
 	}

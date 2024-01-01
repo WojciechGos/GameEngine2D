@@ -7,6 +7,8 @@ static void blood(int x0, int y0);
 static void barrel(int x0, int y0, int RX, int RY);
 static void drawMap();
 static void menu();
+static void goodbye();
+
 
 };
 #endif

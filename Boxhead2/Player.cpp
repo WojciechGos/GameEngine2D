@@ -62,95 +62,65 @@ void Player::shot(Gameplay* gameplay) {
 	int index = 0;
 	//std::cout << "size: " << gameplay->enemies.size() << std::endl;
 
-	for(int i=0; i<gameplay->getEnemyNumber(); ++i){
-		
-		//if (!gameplay->enemies[i].getIsAlive()) {
-		//	continue;
-		//}
+    for (auto& enemy : gameplay->enemies) {
+        distance = enemy.distanceToPlayer(&this->position);
 
-		distance = gameplay->enemies[i].distanceToPlayer(&this->position);
-		//std::cout << "enemy index: " << i << std::endl;
-		enemy_x = gameplay->enemies[i].getPosition()->getX();
-		enemy_y = gameplay->enemies[i].getPosition()->getY();
+        enemy_x = enemy.getPosition()->getX();
+        enemy_y = enemy.getPosition()->getY();
 
-		//std::cout << "enemy_x: " << enemy_x << " enemy_y: " << enemy_y << std::endl;
-		//std::cout << "player_x: " << position.getX() << " player_y: " << position.getY() << std::endl;
-			
-		field_of_fire_y1 = position.getY() + 2*SPRITE_SHIFT - SPRITE_DIMENSION;
-		field_of_fire_y2 = position.getY() + 2 * SPRITE_SHIFT;
-		
-		field_of_fire_x1 = position.getX() + SPRITE_SHIFT - SPRITE_DIMENSION;
-		field_of_fire_x2 = position.getX() + SPRITE_SHIFT;
+        field_of_fire_y1 = position.getY() + 2 * SPRITE_SHIFT - SPRITE_DIMENSION;
+        field_of_fire_y2 = position.getY() + 2 * SPRITE_SHIFT;
 
-		if (position.getDirection() == UP) {
-			//std::cout << "UP" << std::endl;
-			if (enemy_y < position.getY() ) {
+        field_of_fire_x1 = position.getX() + SPRITE_SHIFT - SPRITE_DIMENSION;
+        field_of_fire_x2 = position.getX() + SPRITE_SHIFT;
 
-				// check if enemy is in field fire in X axis
-				if (field_of_fire_x1 <= enemy_x && enemy_x <= field_of_fire_x2) {
-					isSomeoneShoted = true;
-					if (lowestDistance > distance) {
-						lowestDistance = distance;
-						index = i;
-					}
-				}
-			}
-		}
+        if (position.getDirection() == UP && enemy_y < position.getY()) {
+            if (field_of_fire_x1 <= enemy_x && enemy_x <= field_of_fire_x2) {
+                isSomeoneShoted = true;
+                if (lowestDistance > distance) {
+                    lowestDistance = distance;
+                    index = &enemy - &gameplay->enemies[0]; // Calculate the index
+                }
+            }
+        }
+        else if (position.getDirection() == DOWN && enemy_y > position.getY()) {
+            if (field_of_fire_x1 <= enemy_x && enemy_x <= field_of_fire_x2) {
+                isSomeoneShoted = true;
+                if (lowestDistance > distance) {
+                    lowestDistance = distance;
+                    index = &enemy - &gameplay->enemies[0]; // Calculate the index
+                }
+            }
+        }
+        else if (position.getDirection() == LEFT && enemy_x < position.getX()) {
+            if (enemy_y >= field_of_fire_y1 && enemy_y <= field_of_fire_y2) {
+                isSomeoneShoted = true;
+                if (lowestDistance > distance) {
+                    lowestDistance = distance;
+                    index = &enemy - &gameplay->enemies[0]; // Calculate the index
+                }
+            }
+        }
+        else if (position.getDirection() == RIGHT && enemy_x > position.getX()) {
+            if (enemy_y >= field_of_fire_y1 && enemy_y <= field_of_fire_y2) {
+                isSomeoneShoted = true;
+                if (lowestDistance > distance) {
+                    lowestDistance = distance;
+                    index = &enemy - &gameplay->enemies[0]; // Calculate the index
+                }
+            }
+        }
+    }
 
-		else if (position.getDirection() == DOWN) {
+    distance = 0;
+    lowestDistance = 10000000;
 
-			if (enemy_y > position.getY()) {
-				// check if enemy is in field fire in X axis
-				if (field_of_fire_x1 <= enemy_x && enemy_x <= field_of_fire_x2) {
+    if (isSomeoneShoted) {
+        isSomeoneShoted = false;
+        points += 10;
+        gameplay->killEnemy(index);
+    }
 
-					isSomeoneShoted = true;
-					if (lowestDistance > distance) {
-						lowestDistance = distance;
-						index = i;
-					}
-				}
-
-			}
-
-		}
-
-		else if (position.getDirection() == LEFT) {
-			if (enemy_x < position.getX()) {
-				// check if enemy is in field fire in Y axis
-				if (enemy_y >= field_of_fire_y1 && enemy_y <= field_of_fire_y2) {
-
-					isSomeoneShoted = true;
-					if (lowestDistance > distance) {
-						lowestDistance = distance;
-						index = i;
-					}
-				}
-			}
-		}
-
-		else if (position.getDirection() == RIGHT) {
-			if (enemy_x > position.getX()) {
-				// check if enemy is in field fire in Y axis
-				if (enemy_y >= field_of_fire_y1 && enemy_y <= field_of_fire_y2) {
-
-					isSomeoneShoted = true;
-					if (lowestDistance > distance) {
-						lowestDistance = distance;
-						index = i;
-					}
-				}
-			}
-		}
-	}
-
-	distance = 0;
-	lowestDistance = 10000000;
-
-	if (isSomeoneShoted) {
-		isSomeoneShoted = false;
-		points += 10;
-		gameplay->killEnemy(index);
-	}
 }
 
 void Player::drawLifeBar()
@@ -162,7 +132,7 @@ void Player::drawLifeBar()
 
     al_draw_rectangle(100, 20, 700, 50, borderColor, 2);
     
-        int lifePoints = 6;
+  
         float lifeWidth = static_cast<float>(lifePoints) / 15.0 * 100;
 
 
@@ -170,15 +140,22 @@ void Player::drawLifeBar()
         //pasek zycia
     if (lifePoints > 0)
         al_draw_filled_rectangle(100, 20, 100 * lifePoints + 100, 50, lifeColor);
-
-        //if player == oponent lifePoints -=1;
-    
 }
+
+bool Player::giveDmg() {
+    lifePoints--;
+    if (lifePoints == 0)
+        return true;
+    return false;
+}
+
+
 void Player::pointsCounter(ALLEGRO_FONT* font)
 {
 	std::string text = "POINTS: " + std::to_string(points);
 	al_draw_text(font, al_map_rgb(255, 255, 255), 1588, 40, ALLEGRO_ALIGN_CENTER, text.c_str());
 }
+
 void Player::renderShot() {
 	
 	float start_point_x = position.getX();
