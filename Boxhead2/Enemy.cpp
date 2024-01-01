@@ -3,7 +3,6 @@
 #include <iostream>
 #include <allegro5/allegro5.h>
 #include <allegro5/allegro_image.h>
-#include "Player.h"
 #include <cmath>
 #include "Interface.h"
 #include <cstdlib>
@@ -89,9 +88,6 @@ void Enemy::updatePosition(Movement* player_position) {
 	else
 		move_y = -1 * std::ceil(dy * ENEMY_SPEED);
 
-	//if (std::abs(move_y) > std::abs(move_x)) {
-
-	//}
 
 	//std::cout << "move_x: " << move_x << " move_y: " << move_y << std::endl;
 	//std::cout << "x: " << position.getX() << " y: " << position.getY() << std::endl;
@@ -124,7 +120,6 @@ void Enemy::updatePosition(Movement* player_position) {
 	}
 }
 
-//void giveDamageToPlayer(Player* player)
 
 void Enemy::render(ALLEGRO_EVENT* events) {
 	

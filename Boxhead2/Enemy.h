@@ -2,6 +2,8 @@
 #define Enemy_h
 
 #include "Control.h"
+//#include "Player.h";
+//class Player;
 
 class Enemy {
 public:
