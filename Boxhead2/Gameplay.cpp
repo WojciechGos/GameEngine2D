@@ -13,23 +13,22 @@ Gameplay::Gameplay(){
 */
 void Gameplay::startRound() {
 	round++;
-	enemyNumberInRound = float(enemyNumberInRound) * 1.2;
+	enemyNumberInRound = float(enemyNumberInRound) * 2;
 	ifNewRoundStarted = true;
 	std::cout << "enemies in round: " << enemyNumberInRound << std::endl;
-
 
 }
 
 /*
 	In this function there are performed all operations related to gameplay like:
-		- checks wherher a new round should start
+		- checks whether a new round should start
 		- spawns new set of enemies
 	Timer need to be set to 1 second
 */
-void Gameplay::run(ALLEGRO_EVENT event, ALLEGRO_TIMER* enemy_timer) {
-	if (event.type == ALLEGRO_EVENT_TIMER) {
-		if (event.timer.source == enemy_timer) {
-			if (enemyNumberAlive == 0 && !ifNewRoundStarted)
+void Gameplay::run(ALLEGRO_EVENT* event, ALLEGRO_TIMER* enemy_timer) {
+	if (event->type == ALLEGRO_EVENT_TIMER) {
+		if (event->timer.source == enemy_timer) {
+			if (enemyNumberAlive == 0 &&  (enemyNumberSpawned == enemyNumberInRound))
 				startRound();
 			
 			if (enemyNumberInRound != enemyNumberSpawned) {
@@ -44,9 +43,9 @@ int Gameplay::getEnemyNumber() {
 }
 
 void Gameplay::spawnEnemy() {
-
-		enemyNumberSpawned++;
-		enemies.push_back(Enemy::spawnEnemy());
+	enemyNumberAlive++;
+	enemyNumberSpawned++;
+	enemies.push_back(Enemy::spawnEnemy());
 }
 
 bool Gameplay::ifAllEnemiesAreDead() {
@@ -57,7 +56,12 @@ bool Gameplay::ifAllEnemiesAreDead() {
 }
 
 void Gameplay::killEnemy(int index) {
+
 	enemies[index].setIsAlive(false);
+
+	deadEnemies.push_back(enemies[index]);
+	enemies.erase(enemies.begin() + index);
+
 	enemyNumberAlive--;
-	std::cout << "BANG" << std::endl;
+	std::cout << "enemy number alive: " << enemyNumberAlive << std::endl;
 }

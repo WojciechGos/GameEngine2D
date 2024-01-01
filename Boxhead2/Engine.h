@@ -16,7 +16,7 @@ public:
 private:
 
 
-    void handle_keyboard(ALLEGRO_EVENT event, Player* player, Gameplay *gameplay);
+    void handle_keyboard(ALLEGRO_EVENT* event, Player* player, Gameplay *gameplay);
 
     void handle_mouse();
 

@@ -54,16 +54,16 @@ void Engine::run() {
 	ALLEGRO_TIMER* timer = NULL;
 	ALLEGRO_TIMER* enemy_timer = NULL;
 	timer = al_create_timer(1. / (float)FPS);
-	enemy_timer = al_create_timer(1.0);
+	enemy_timer = al_create_timer(0.5);
 	ALLEGRO_EVENT_QUEUE* event_queue = al_create_event_queue();
-
+	ALLEGRO_FONT* font = al_load_font("CONSOLA.ttf", 32, 0);
 	ALLEGRO_DISPLAY* display = NULL;
 
 	// Player create
 	Player player(INITIAL_PLAYER_POSITION_X, INITIAL_PLAYER_POSITION_Y);
 
 	Gameplay gameplay;
-
+	int i = 0;
 
 	/*
 		SETTING WINDOWS PARAMETERS
@@ -90,11 +90,11 @@ void Engine::run() {
 	*/
 	bool running = true;
 	al_flip_display();
+	ALLEGRO_EVENT event;
 
 	while (running) {
-		ALLEGRO_EVENT event;
+		
 		al_wait_for_event(event_queue, &event);
-
 		Interface::drawMap();
 		player.drawLifeBar();
 
@@ -102,26 +102,31 @@ void Engine::run() {
 		/*
 			EVENT HANDLERS
 		*/
-		handle_keyboard(event, &player, &gameplay);
+		handle_keyboard(&event, &player, &gameplay);
 		if (event.type == ALLEGRO_EVENT_DISPLAY_CLOSE) {
 			running = false;
 		}
-		gameplay.run(event, enemy_timer);
+		gameplay.run(&event, enemy_timer);
 		/*
 			DRAW
 		*/
-		for (int i = 0; i < gameplay.enemies.size(); ++i) {
-			gameplay.enemies[i].updatePosition(&player.position);
-			gameplay.enemies[i].render(event);
+		for (i = 0; i < gameplay.deadEnemies.size(); ++i) {
+			gameplay.deadEnemies[i].render(&event);
 		}
-		player.render(event);
-		player.pointsCounter();
+		for (i = 0; i < gameplay.enemies.size(); ++i) {
+			gameplay.enemies[i].updatePosition(&player.position);
+			gameplay.enemies[i].render(&event);
+		}
+
+		player.render(&event);
+		player.pointsCounter(font);
 		al_flip_display();
 
 	}
 
 	al_destroy_display(display);
 	al_destroy_timer(timer);
+	al_destroy_font(font);
 	al_destroy_event_queue(event_queue);
 }
 
@@ -130,19 +135,17 @@ void Engine::run() {
 /*
 	Function handle_keyboard is responsible for player movement.
 */
-void Engine::handle_keyboard(ALLEGRO_EVENT event, Player* player, Gameplay* gameplay) {
+void Engine::handle_keyboard(ALLEGRO_EVENT* event, Player* player, Gameplay* gameplay) {
 
 	ALLEGRO_KEYBOARD_STATE keyState;
-	if (event.type == ALLEGRO_EVENT_KEY_DOWN) {
-		if (event.keyboard.keycode == ALLEGRO_KEY_SPACE) {
-
+	if (event->type == ALLEGRO_EVENT_KEY_DOWN) {
+		if (event->keyboard.keycode == ALLEGRO_KEY_SPACE) {
 				std::cout << "FIRE" << std::endl;
 				player->shot(gameplay);
-			
 		}
 	}
 
-	if (event.type == ALLEGRO_EVENT_TIMER) {
+	if (event->type == ALLEGRO_EVENT_TIMER) {
 		al_get_keyboard_state(&keyState);
 
 		player->position.setActive(true);

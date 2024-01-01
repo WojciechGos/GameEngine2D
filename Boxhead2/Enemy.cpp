@@ -3,10 +3,12 @@
 #include <iostream>
 #include <allegro5/allegro5.h>
 #include <allegro5/allegro_image.h>
+#include "Player.h"
 #include <cmath>
 #include "Interface.h"
+#include <cstdlib>
 
-#define ENEMY_SPEED 1.0f
+#define ENEMY_SPEED 1.5f
 
 #define INITIAL_ENEMY_POSITION_X 850
 #define INITIAL_ENEMY_POSITION_Y 0
@@ -44,6 +46,19 @@ bool Enemy::getIsAlive() {
 	return this->isAlive;
 }
 
+float Enemy::distanceToPlayer(Movement* player_position) {
+
+	float dx = player_position->getX();
+	float dy = player_position->getY();
+
+	// Update enemy position
+	float move_x = 0;
+	float move_y = 0;
+
+	float length = std::ceil(sqrt(dx * dx + dy * dy));
+	return std::abs(length);
+}
+
 void Enemy::updatePosition(Movement* player_position) {
 
 	if (!isAlive)
@@ -62,8 +77,6 @@ void Enemy::updatePosition(Movement* player_position) {
 		dx /= length;
 		dy /= length;
 	}
-
-
 
 	if (position.getX() < player_position->getX())
 		move_x = std::ceil(dx * ENEMY_SPEED);
@@ -107,7 +120,7 @@ void Enemy::updatePosition(Movement* player_position) {
 }
 
 
-void Enemy::render(ALLEGRO_EVENT events) {
+void Enemy::render(ALLEGRO_EVENT* events) {
 	
 	if (!isAlive) {
 		Interface::blood(position.getX(), position.getY());
@@ -118,7 +131,7 @@ void Enemy::render(ALLEGRO_EVENT events) {
 		std::cout << "enemy init error" << std::endl;
 	}
 
-	if (events.type == ALLEGRO_EVENT_TIMER)
+	if (events->type == ALLEGRO_EVENT_TIMER)
 	{
 		if (true)
 			setState(getState() + 32);
@@ -136,4 +149,5 @@ Enemy Enemy::spawnEnemy() {
 }
 void Enemy::setIsAlive(bool state) {
 	isAlive = state;
+	al_destroy_bitmap(bitmap);
 }

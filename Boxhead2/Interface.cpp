@@ -2,6 +2,8 @@
 
 #include <allegro5/allegro.h>
 #include <allegro5/allegro_primitives.h>
+#include <allegro5/allegro_font.h>
+#include <allegro5/allegro_ttf.h>
 #include <cmath>
 
 #define M_PI 3.14159265358979323846
@@ -42,35 +44,35 @@ void Interface::drawMap()
     int odleglosc_miedzy_beczkami = 50;
     int x_poczatek = 0;
 
-    for (int i = 0; i < liczba_beczek; i++) {
+    //for (int i = 0; i < liczba_beczek; i++) {
 
-        al_draw_filled_ellipse(x_poczatek, 300, 50, 25, al_map_rgb(255, 255, 255));
-        al_draw_filled_ellipse(x_poczatek, 400, 50, 25, al_map_rgb(255, 255, 255));
+    //    al_draw_filled_ellipse(x_poczatek, 300, 50, 25, al_map_rgb(255, 255, 255));
+    //    al_draw_filled_ellipse(x_poczatek, 400, 50, 25, al_map_rgb(255, 255, 255));
 
-        al_draw_ellipse(x_poczatek, 300, 50, 25, al_map_rgb(0, 0, 0), 2);
-        al_draw_ellipse(x_poczatek, 400, 50, 25, al_map_rgb(0, 0, 0), 2);
-        al_draw_filled_rectangle(x_poczatek - 50, 300, x_poczatek + 50, 400, al_map_rgb(255, 255, 255));
+    //    al_draw_ellipse(x_poczatek, 300, 50, 25, al_map_rgb(0, 0, 0), 2);
+    //    al_draw_ellipse(x_poczatek, 400, 50, 25, al_map_rgb(0, 0, 0), 2);
+    //    al_draw_filled_rectangle(x_poczatek - 50, 300, x_poczatek + 50, 400, al_map_rgb(255, 255, 255));
 
-        x_poczatek += odleglosc_miedzy_beczkami;
-    }
+    //    x_poczatek += odleglosc_miedzy_beczkami;
+    //}
 
 
 
-    int x_koniec = 1800;
-    int y_poczatek = 250;
+    //int x_koniec = 1800;
+    //int y_poczatek = 250;
 
-    for (int i = 0; i < liczba_beczek; i++) {
-        float y_gora = y_poczatek - 25;
-        float y_dol = y_poczatek + 25;
+    //for (int i = 0; i < liczba_beczek; i++) {
+    //    float y_gora = y_poczatek - 25;
+    //    float y_dol = y_poczatek + 25;
 
-        al_draw_filled_ellipse(x_koniec, y_gora, 50, 25, al_map_rgb(255, 255, 255));
-        al_draw_filled_ellipse(x_koniec, y_dol, 50, 25, al_map_rgb(255, 255, 255));
-        al_draw_ellipse(x_koniec, y_gora, 50, 25, al_map_rgb(0, 0, 0), 2);
-        al_draw_ellipse(x_koniec, y_dol, 50, 25, al_map_rgb(0, 0, 0), 2);
-        al_draw_filled_rectangle(x_koniec - 50, y_gora, x_koniec + 50, y_dol, al_map_rgb(255, 255, 255));
+    //    al_draw_filled_ellipse(x_koniec, y_gora, 50, 25, al_map_rgb(255, 255, 255));
+    //    al_draw_filled_ellipse(x_koniec, y_dol, 50, 25, al_map_rgb(255, 255, 255));
+    //    al_draw_ellipse(x_koniec, y_gora, 50, 25, al_map_rgb(0, 0, 0), 2);
+    //    al_draw_ellipse(x_koniec, y_dol, 50, 25, al_map_rgb(0, 0, 0), 2);
+    //    al_draw_filled_rectangle(x_koniec - 50, y_gora, x_koniec + 50, y_dol, al_map_rgb(255, 255, 255));
 
-        x_koniec -= odleglosc_miedzy_beczkami;
-    }
+    //    x_koniec -= odleglosc_miedzy_beczkami;
+    //}
 }
 
 
@@ -93,18 +95,18 @@ void Interface::blood(int x0, int y0)
 
 void Interface::barrel(int x0, int y0, int RX, int RY)
 {
-    for (double alpha = 0; alpha < 2 * M_PI; alpha += 0.01) {
-        int x = x0 + RX * cos(alpha);
-        int y = y0 + RY * sin(alpha);
+    //for (double alpha = 0; alpha < 2 * M_PI; alpha += 0.01) {
+    //    int x = x0 + RX * cos(alpha);
+    //    int y = y0 + RY * sin(alpha);
 
-        al_draw_pixel(x, y, al_map_rgb(0, 0, 0));
-        al_draw_pixel(x, y - 50, al_map_rgb(0, 0, 0));
-    }
+    //    al_draw_pixel(x, y, al_map_rgb(0, 0, 0));
+    //    al_draw_pixel(x, y - 50, al_map_rgb(0, 0, 0));
+    //}
 
-    al_draw_filled_ellipse(x0, y0 - 2.5, RX, RY, al_map_rgb(255, 255, 255));
-    al_draw_filled_ellipse(x0, y0 - 50, RX, RY, al_map_rgb(255, 255, 255));
+    //al_draw_filled_ellipse(x0, y0 - 2.5, RX, RY, al_map_rgb(255, 255, 255));
+    //al_draw_filled_ellipse(x0, y0 - 50, RX, RY, al_map_rgb(255, 255, 255));
 
-    al_draw_filled_rectangle(720, 550, 880, 600, al_map_rgb(255, 255, 255));
+    //al_draw_filled_rectangle(720, 550, 880, 600, al_map_rgb(255, 255, 255));
 }
 /*
 	Interface file contains all classes related with drawing graphic.

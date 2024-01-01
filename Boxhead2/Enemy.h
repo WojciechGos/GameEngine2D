@@ -10,7 +10,7 @@ public:
     Enemy();
     Enemy(int x, int y);
     void updatePosition(Movement* playerPosition);
-    void render(ALLEGRO_EVENT event);
+    void render(ALLEGRO_EVENT *event);
     void setState(int state);
     void setDirection(int direction);
     static Enemy spawnEnemy();
@@ -19,11 +19,15 @@ public:
     int getDirection();
     void setIsAlive(bool state);
     bool getIsAlive();
+    float distanceToPlayer(Movement* player_position);
+    //~Enemy();
+
 private:
     ALLEGRO_BITMAP* bitmap;
     bool isAlive = true;
     Movement position;
     int direction, state;
+
 };
 
 #endif
