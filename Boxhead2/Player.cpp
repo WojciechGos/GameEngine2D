@@ -14,13 +14,30 @@
 #define SPRITE_SHIFT 10.0f // it is related to position of shot
 #define LENGTH_OF_FIRE 2000
 
+/**
+ * @brief Constructor for the Player class.
+ *
+ * This constructor initializes a Player object with a specified position
+ * and loads the player image from the file "player.png".
+ *
+ * @param x The initial x-coordinate of the player.
+ * @param y The initial y-coordinate of the player.
+ */
 
 Player::Player(int x, int y) {
 	player = al_load_bitmap("player.png");
     position.setX(x);
     position.setY(y);
 }
-
+/**
+* @brief render - this function is responsible for rendering the player character on the screen based on the provided ALLEGRO_EVENT
+     and Movement objects. It loads the player image, handles animation based on movement events, and draws the player
+     at the specified coordinates.
+*
+* @ALLEGRO_EVENT events: The ALLEGRO_EVENT object containing information about the event.
+  @Movement* movement: A pointer to the Movement object representing the player's movement.
+*
+*/
 void Player::render(ALLEGRO_EVENT* events) {
 
 
@@ -45,10 +62,18 @@ void Player::render(ALLEGRO_EVENT* events) {
 }
 
 
-/*
-	This function is reponsible for fire functionality. I
-	It iterate for every enemy and checks wheter enemy is in field of fire
-*/
+/**
+ * @brief Perform a shot action in the game.
+ *
+ * This function handles the firing functionality of the player. It iterates through
+ * each enemy in the game, checking whether the enemy is within the field of fire
+ * based on the player's current direction. If an enemy is in the field of fire and
+ * is the closest to the player, it is marked as shot, and the corresponding
+ * `killEnemy` function is called to handle the removal of the enemy from the game.
+ * Additionally, the player earns points for successfully shooting an enemy.
+ *
+ * @param gameplay A pointer to the Gameplay instance containing the game state.
+ */
 void Player::shot(Gameplay* gameplay) {
 	std::cout << " SPACE TEST " << std::endl;
 	renderShot();
@@ -122,7 +147,14 @@ void Player::shot(Gameplay* gameplay) {
     }
 
 }
-
+/**
+* @brief life bar - this function is responsible for handling collisions between the player and an enemy. It takes an Enemy object
+*   as a parameter and checks for collision with the player. If a collision is detected, it performs actions such as
+*   updating the player's health and potentially decrementing points.
+*
+* @Function draws rectangle with a life bar in left upper corner.
+*
+*/
 void Player::drawLifeBar()
 {
 
@@ -148,14 +180,28 @@ bool Player::giveDmg() {
         return true;
     return false;
 }
-
+/**
+ * @brief points counter - this function is responsible for updating and displaying the player's points. The player starts with 0 points,
+ *   and points are incremented when the player kills an enemy.
+ *
+ * @int points: Holds the current points of the player.
+ * @std::string text: Holds the text to be displayed, including the word "POINTS:" and the current point value.
+ *
+ *  The function uses the Allegro library to draw the points on the right side of screen with a white color.
+ *
+*/
 
 void Player::pointsCounter(ALLEGRO_FONT* font)
 {
 	std::string text = "POINTS: " + std::to_string(points);
 	al_draw_text(font, al_map_rgb(255, 255, 255), 1588, 40, ALLEGRO_ALIGN_CENTER, text.c_str());
 }
-
+/**
+* @brief render shot - this function render a shot fired by the player.
+*  It takes a Movement object as a parameter,
+*  which can be use to determine the position and state of the shot.
+*  The actual rendering logic for the shot will be implemented based on the game's requirements.
+*/
 void Player::renderShot() {
 	
 	float start_point_x = position.getX();

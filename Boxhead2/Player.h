@@ -8,6 +8,13 @@
 
 #define INITIAL_PLAYER_POSITION_X 100
 #define INITIAL_PLAYER_POSITION_Y 100
+/**
+ * @brief Player class represents the player character in the game.
+ *
+ * @The Player class manages the player's position, movement, health, points, and rendering on the screen.
+ * It includes functions for rendering the player, rendering shots, handling collisions, drawing a life bar,
+ * and updating points. Additionally, the constructor initializes the player object with a specified position.
+ */
 
 class Player {
 private:

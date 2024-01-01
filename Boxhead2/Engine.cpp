@@ -24,11 +24,22 @@ int SCREEN_POSITION_Y = 30;
 
 
 #include "Engine.h"
-
+/**
+ * @brief Engine class responsible for managing the game engine.
+ *
+ * The Engine class is responsible for initializing and running the game engine.
+ * It handles Allegro initialization, event processing, game loop, and various
+ * game-related operations.
+ */
 Engine::Engine() {
 	
 }
-
+/**
+ * @brief Initialize the game engine.
+ *
+ * This function initializes Allegro and various Allegro addons required for the game.
+ * It sets up timers, event queues, and the game display.
+ */
 void Engine::init() {
 
 	/*
@@ -44,7 +55,12 @@ void Engine::init() {
 
 	
 }
-
+/**
+ * @brief Run the game engine.
+ *
+ * This function sets up timers, event queues, and the game display. It then enters
+ * the main game loop, handling events, updating the game state, and rendering.
+ */
 void Engine::run() {
 	/*
 		INITIALIZING VARIABLES
@@ -177,9 +193,15 @@ void Engine::run() {
 
 
 
-/*
-	Function handle_keyboard is responsible for player movement.
-*/
+/**
+ * @brief Handle keyboard input for player movement.
+ *
+ * This function is called in the game loop to handle keyboard input.
+ * It updates the player's position based on the keys pressed.
+ *
+ * @param event The Allegro event containing keyboard input.
+ * @param movement A pointer to the Movement object representing the player's position.
+ */
 void Engine::handle_keyboard(ALLEGRO_EVENT* event, Player* player, Gameplay* gameplay) {
 
 	ALLEGRO_KEYBOARD_STATE keyState;
@@ -225,7 +247,11 @@ void Engine::handle_keyboard(ALLEGRO_EVENT* event, Player* player, Gameplay* gam
 			player->position.setActive(false);
 	}
 }
-
+/**
+ * @brief Handle mouse input (not yet implemented).
+ *
+ * This function is a placeholder for handling mouse input, and it is currently empty.
+ */
 void Engine::handle_mouse() {
 
 

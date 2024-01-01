@@ -167,7 +167,12 @@ void Interface::goodbye() {
     al_draw_text(al_create_builtin_font(), al_map_rgb(255, 255, 255), x + width / 2, y + height / 2 - 20, ALLEGRO_ALIGN_CENTER, "Boxhead2");
     al_draw_text(al_create_builtin_font(), al_map_rgb(255, 255, 255), x + width / 2, y + height / 2, ALLEGRO_ALIGN_CENTER, "Przegrales Wylacz i wlacz, aby zagrac ponownie");
 }
-
+/**
+ * @brief Draw the game map.
+ *
+ * This function draws the game map using filled rectangles and ellipses.
+ * It includes walls and barrels as part of the environment.
+ */
 void Interface::drawMap()
 {
     al_clear_to_color(al_map_rgb(0, 0, 0));
@@ -234,7 +239,16 @@ void Interface::drawMap()
     //}
 }
 
-
+/**
+ * @brief Display a blood effect at a specific position.
+ *
+ * This function draws a blood effect at the specified position (x0, y0).
+ * It creates a semi-circular pattern using pixels and fills the center with
+ * a filled circle to represent blood. The color used is red (255, 0, 0).
+ *
+ * @param x0 The x-coordinate of the center of the blood effect.
+ * @param y0 The y-coordinate of the center of the blood effect.
+ */
 void Interface::blood(int x0, int y0)
 {
     for (double alpha = 0; alpha <= M_PI / 2; alpha += 0.01) {
