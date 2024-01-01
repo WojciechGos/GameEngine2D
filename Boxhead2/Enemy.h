@@ -3,7 +3,6 @@
 
 #include "Control.h"
 
-
 class Enemy {
 public:
 
@@ -27,7 +26,7 @@ private:
     bool isAlive = true;
     Movement position;
     int direction, state;
-
+    //void giveDamageToPlayer(Player* player);
 };
 
 #endif

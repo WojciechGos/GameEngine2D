@@ -14,12 +14,9 @@
 
 #include <iostream>
 
-#define screenWidth 1800
-#define screenHeight 900
 
 #define FPS 60.0
 
-#define MOVE 5
 
 int SCREEN_POSITION_X = 30;
 int SCREEN_POSITION_Y = 30;
@@ -38,6 +35,7 @@ void Engine::init() {
 		INITIALIZATION AND INSTALATION
 	*/
 	al_init();
+	//al_install_mouse();
 	al_install_keyboard();
 	al_init_image_addon();
 	al_init_font_addon();
@@ -79,6 +77,7 @@ void Engine::run() {
 	*/
 	al_register_event_source(event_queue, al_get_display_event_source(display));
 	al_register_event_source(event_queue, al_get_keyboard_event_source());
+	//al_register_event_source(event_queue, al_get_mouse_event_source());
 	al_register_event_source(event_queue, al_get_timer_event_source(timer));
 	al_register_event_source(event_queue, al_get_timer_event_source(enemy_timer));
 	al_start_timer(timer);
@@ -91,6 +90,29 @@ void Engine::run() {
 	bool running = true;
 	al_flip_display();
 	ALLEGRO_EVENT event;
+
+	//while (1) {
+
+	//	Interface::menu();
+	//	al_flip_display();
+
+	//	ALLEGRO_EVENT ev;
+	//	al_wait_for_event(event_queue, &ev);
+
+
+	//	if (ev.type == ALLEGRO_EVENT_MOUSE_BUTTON_DOWN) {
+
+	//		if (ev.mouse.x >= 600 && ev.mouse.x <= 1050
+	//			&& ev.mouse.y >= 200 && ev.mouse.y <= 600) {
+	//			break;
+	//		}
+
+	//	}
+
+	//	if (ev.type == ALLEGRO_EVENT_DISPLAY_CLOSE) {
+	//		break;
+	//	}
+	//}
 
 	while (running) {
 		
@@ -110,12 +132,14 @@ void Engine::run() {
 		/*
 			DRAW
 		*/
-		for (i = 0; i < gameplay.deadEnemies.size(); ++i) {
-			gameplay.deadEnemies[i].render(&event);
+
+		for (auto& deadEnemy : gameplay.deadEnemies) {
+			deadEnemy.render(&event);
 		}
-		for (i = 0; i < gameplay.enemies.size(); ++i) {
-			gameplay.enemies[i].updatePosition(&player.position);
-			gameplay.enemies[i].render(&event);
+
+		for (auto& enemy : gameplay.enemies) {
+			enemy.updatePosition(&player.position);
+			enemy.render(&event);
 		}
 
 		player.render(&event);
@@ -140,8 +164,8 @@ void Engine::handle_keyboard(ALLEGRO_EVENT* event, Player* player, Gameplay* gam
 	ALLEGRO_KEYBOARD_STATE keyState;
 	if (event->type == ALLEGRO_EVENT_KEY_DOWN) {
 		if (event->keyboard.keycode == ALLEGRO_KEY_SPACE) {
-				std::cout << "FIRE" << std::endl;
-				player->shot(gameplay);
+			std::cout << "FIRE" << std::endl;
+			player->shot(gameplay);
 		}
 	}
 
@@ -151,23 +175,31 @@ void Engine::handle_keyboard(ALLEGRO_EVENT* event, Player* player, Gameplay* gam
 		player->position.setActive(true);
 		if (al_key_down(&keyState, ALLEGRO_KEY_D))
 		{
-			player->position.setX(player->position.getX() + MOVE);
-			player->position.setDirection(64);
+			player->position.setDirection(RIGHT);
+			if (!player->position.checkCollision()) {
+				player->position.setX(player->position.getX() + MOVE);
+			}
 		}
 		else if (al_key_down(&keyState, ALLEGRO_KEY_A))
 		{
-			player->position.setX(player->position.getX() - MOVE);
-			player->position.setDirection(32);
+			player->position.setDirection(LEFT);
+			if (!player->position.checkCollision()) {
+				player->position.setX(player->position.getX() - MOVE);
+			}
 		}
 		else if (al_key_down(&keyState, ALLEGRO_KEY_W))
 		{
-			player->position.setY(player->position.getY() - MOVE);
-			player->position.setDirection(96);
+			player->position.setDirection(UP);
+			if (!player->position.checkCollision()) {
+				player->position.setY(player->position.getY() - MOVE);
+			}
 		}
 		else if (al_key_down(&keyState, ALLEGRO_KEY_S))
 		{
-			player->position.setY(player->position.getY() + MOVE);
-			player->position.setDirection(0);
+			player->position.setDirection(DOWN);
+			if (!player->position.checkCollision()) {
+				player->position.setY(player->position.getY() + MOVE);
+			}
 		}
 		else
 			player->position.setActive(false);
@@ -177,7 +209,7 @@ void Engine::handle_keyboard(ALLEGRO_EVENT* event, Player* player, Gameplay* gam
 void Engine::handle_mouse() {
 
 
-	// iasiudiasubdfboszafuhgs
+
 }
 
 

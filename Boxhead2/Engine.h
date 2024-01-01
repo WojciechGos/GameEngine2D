@@ -6,6 +6,11 @@
 #include "Player.h"
 #include "Gameplay.h"
 
+#define screenWidth 1800
+#define screenHeight 900
+
+#define MOVE 5
+
 class Engine {
 public:
     Engine();

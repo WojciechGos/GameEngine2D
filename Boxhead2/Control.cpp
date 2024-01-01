@@ -2,6 +2,8 @@
 
 #include <allegro5/allegro.h>
 #include <iostream>
+#include "Engine.h"
+
 
 /*
     Keyboard file contains all classes and functions that handle user's input.
@@ -24,6 +26,23 @@ Movement::Movement(float x, float y) {
 //Movement Movement::update(Movement movement) {
 //
 //}
+
+bool Movement::checkCollision() {
+    
+    if (direction == UP && ((y + MOVE <= 0)))
+        return true;
+       
+    if (direction == DOWN && ((y + 30) >= screenHeight))
+        return true;
+
+    if (direction == LEFT && ((x - MOVE) <= 0))
+        return true;
+
+    if (direction == RIGHT && ((x + 30) >= screenWidth))
+        return true;
+
+    return false;
+}
 
 void Movement::setX(float x) {
     this->x = x;

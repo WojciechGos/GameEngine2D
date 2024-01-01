@@ -78,6 +78,7 @@ void Enemy::updatePosition(Movement* player_position) {
 		dy /= length;
 	}
 
+
 	if (position.getX() < player_position->getX())
 		move_x = std::ceil(dx * ENEMY_SPEED);
 	else
@@ -87,6 +88,10 @@ void Enemy::updatePosition(Movement* player_position) {
 		move_y = std::ceil(dy * ENEMY_SPEED);
 	else
 		move_y = -1 * std::ceil(dy * ENEMY_SPEED);
+
+	//if (std::abs(move_y) > std::abs(move_x)) {
+
+	//}
 
 	//std::cout << "move_x: " << move_x << " move_y: " << move_y << std::endl;
 	//std::cout << "x: " << position.getX() << " y: " << position.getY() << std::endl;
@@ -119,6 +124,7 @@ void Enemy::updatePosition(Movement* player_position) {
 	}
 }
 
+//void giveDamageToPlayer(Player* player)
 
 void Enemy::render(ALLEGRO_EVENT* events) {
 	

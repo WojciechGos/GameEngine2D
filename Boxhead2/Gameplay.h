@@ -14,7 +14,6 @@ private:
 	int enemyNumberAlive = 0;
 	int enemyNumberSpawned = 0;
 	bool ifNewRoundStarted = false;
-	void increaseEnemyNumber();
 	bool ifAllEnemiesAreDead();
 	void startRound();
 	void spawnEnemy();

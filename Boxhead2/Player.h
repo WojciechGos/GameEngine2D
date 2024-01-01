@@ -11,7 +11,7 @@
 
 class Player {
 private:
-    int hp = 100;
+    int hp = 50;
     void renderShot();
     ALLEGRO_BITMAP* player;
 

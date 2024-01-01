@@ -50,6 +50,7 @@ void Player::render(ALLEGRO_EVENT* events) {
 	It iterate for every enemy and checks wheter enemy is in field of fire
 */
 void Player::shot(Gameplay* gameplay) {
+	std::cout << " SPACE TEST " << std::endl;
 	renderShot();
 
 	float field_of_fire_y1 = 0, field_of_fire_y2 = 0;
@@ -59,16 +60,16 @@ void Player::shot(Gameplay* gameplay) {
 	float distance = 0, lowestDistance = 10000000;
 	bool isSomeoneShoted = false;
 	int index = 0;
-	std::cout << "size: " << gameplay->enemies.size() << std::endl;
+	//std::cout << "size: " << gameplay->enemies.size() << std::endl;
 
 	for(int i=0; i<gameplay->getEnemyNumber(); ++i){
 		
-		if (!gameplay->enemies[i].getIsAlive()) {
-			continue;
-		}
+		//if (!gameplay->enemies[i].getIsAlive()) {
+		//	continue;
+		//}
 
 		distance = gameplay->enemies[i].distanceToPlayer(&this->position);
-		std::cout << "enemy index: " << i << std::endl;
+		//std::cout << "enemy index: " << i << std::endl;
 		enemy_x = gameplay->enemies[i].getPosition()->getX();
 		enemy_y = gameplay->enemies[i].getPosition()->getY();
 
@@ -87,7 +88,6 @@ void Player::shot(Gameplay* gameplay) {
 
 				// check if enemy is in field fire in X axis
 				if (field_of_fire_x1 <= enemy_x && enemy_x <= field_of_fire_x2) {
-					std::cout << "TRAFIONY enemy index: " << i << std::endl;
 					isSomeoneShoted = true;
 					if (lowestDistance > distance) {
 						lowestDistance = distance;
@@ -98,11 +98,11 @@ void Player::shot(Gameplay* gameplay) {
 		}
 
 		else if (position.getDirection() == DOWN) {
-			//std::cout << "DOWN" << std::endl;
+
 			if (enemy_y > position.getY()) {
 				// check if enemy is in field fire in X axis
 				if (field_of_fire_x1 <= enemy_x && enemy_x <= field_of_fire_x2) {
-					std::cout << "TRAFIONY enemy index: " << i << std::endl;
+
 					isSomeoneShoted = true;
 					if (lowestDistance > distance) {
 						lowestDistance = distance;
@@ -115,11 +115,10 @@ void Player::shot(Gameplay* gameplay) {
 		}
 
 		else if (position.getDirection() == LEFT) {
-			//std::cout << "LEFT" << std::endl;
 			if (enemy_x < position.getX()) {
 				// check if enemy is in field fire in Y axis
 				if (enemy_y >= field_of_fire_y1 && enemy_y <= field_of_fire_y2) {
-					std::cout << "TRAFIONY enemy index: " << i << std::endl;
+
 					isSomeoneShoted = true;
 					if (lowestDistance > distance) {
 						lowestDistance = distance;
@@ -130,11 +129,10 @@ void Player::shot(Gameplay* gameplay) {
 		}
 
 		else if (position.getDirection() == RIGHT) {
-			//std::cout << "RIGHT" << std::endl;
 			if (enemy_x > position.getX()) {
 				// check if enemy is in field fire in Y axis
 				if (enemy_y >= field_of_fire_y1 && enemy_y <= field_of_fire_y2) {
-					std::cout << "TRAFIONY enemy index: " << i << std::endl;
+
 					isSomeoneShoted = true;
 					if (lowestDistance > distance) {
 						lowestDistance = distance;
@@ -166,6 +164,7 @@ void Player::drawLifeBar()
     
         int lifePoints = 6;
         float lifeWidth = static_cast<float>(lifePoints) / 15.0 * 100;
+
 
         al_draw_rectangle(100, 20, 700, 50, borderColor, 2);
         //pasek zycia

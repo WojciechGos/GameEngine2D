@@ -27,6 +27,7 @@ public:
 	int getState();
 	int getDirection();
 	bool getActive();
+	bool checkCollision();
 };
 
 
