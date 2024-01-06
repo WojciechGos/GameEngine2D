@@ -6,8 +6,8 @@
 #include <allegro5/allegro_font.h>
 #include <allegro5/allegro_ttf.h>
 
-#define INITIAL_PLAYER_POSITION_X 100
-#define INITIAL_PLAYER_POSITION_Y 100
+#define INITIAL_PLAYER_POSITION_X 900
+#define INITIAL_PLAYER_POSITION_Y 500
 /**
  * @brief Player class represents the player character in the game.
  *
